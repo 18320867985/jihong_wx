@@ -1,0 +1,184 @@
+
+/******商品分类*******/
+
+.prodtype{
+    
+}
+
+.prodtype-head {
+   
+    
+    padding-right: 0;
+
+    
+    .txt {
+        margin-left: 5px;
+        width: 85%;
+        input[type='search'] {
+            float: left;
+            width: 100%;
+            font-size: 14px;
+             height: 30px;
+            line-height: 30px;
+        }
+        
+}
+
+}
+
+//
+.prodtype-ttl{
+    
+    background: @text-ash-2;;
+}
+
+//内容
+.prodtype-cont {
+    padding: 10px ;
+    
+    text-align: center;
+    
+    background: #fff;
+   .prodtype-cont-item {
+       
+       h4{
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+         text-align: left;
+         font-size: 14px;
+         font-weight: 200;
+         color:@text-base;
+          
+         border-bottom: 1px solid @text-ash-3;
+         }
+    
+    
+        //图片
+        img{
+            width: 100%;
+            height: auto;
+            min-height: 80px;
+            max-height: 100px;
+        }
+    
+       }
+    
+    //列表
+    
+    dl{
+         text-align: left;
+         margin: 0;
+        dt{
+            margin-bottom: 10px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid @text-ash-3;
+            h4{
+                 color:@text-base;
+                 font-weight: 200;
+                 font-size: 14px;
+                 
+            };
+           
+           &.all-ttl{
+                     border-bottom: 2px solid @text-ash-3;  
+                 }
+        }
+        
+        dd{
+            @width:60px;//宽的变量
+            
+            margin: 0;
+            padding: 0;
+            
+            a{
+                display: inline-block;
+               
+                 margin-right: 10px;
+                 margin-bottom: 5px;
+                  color:@text-777;
+                  text-align: center;
+                  
+                 &:active{
+                     color:@text-warning;
+                 }
+                 
+                 img{
+                     display: block;
+                     margin-bottom: 5px;
+                     width: @width;
+                     height: @width;
+                     
+                     
+                 }
+                 
+                 span{
+                     display:  inline-block;
+                     max-width:@width;
+                     overflow: hidden;
+                     text-overflow: ellipsis;
+                     white-space: nowrap;
+                     font-size: 12px;
+                 }
+             
+            }
+        }
+        
+    }
+    
+  //media min-witdh:400px   
+   @media only screen and (min-width:400px ){
+    
+    //列表
+    
+        dl{
+             text-align: left;
+             
+            
+            dd{
+                @width:70px;//宽的变量
+                
+                margin: 0;
+                padding: 0;
+                
+                a{
+                    display: inline-block;
+                   
+                     margin-right: 10px;
+                     margin-bottom: 5px;
+                      color:@text-777;
+                      text-align: center;
+                      
+                     &:active{
+                         color:@text-warning;
+                     }
+                     
+                     img{
+                         display: block;
+                         margin-bottom: 5px;
+                         width: @width;
+                         height: @width;
+                         
+                         
+                     }
+                     
+                     span{
+                         display:  inline-block;
+                         max-width:@width;
+                         overflow: hidden;
+                         text-overflow: ellipsis;
+                         white-space: nowrap;
+                         font-size: 12px;
+                     }
+                 
+                }
+            }
+            
+        }
+        
+
+   }
+
+    
+}
+
+

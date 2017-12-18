@@ -1,0 +1,56 @@
+/***付款明细*****/
+
+
+//每一项
+.paydtl-item{
+    
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 15px 10px;
+    background: #fff;
+    
+    ul{
+         padding: 0;
+         margin: 0;
+         font-size: 14px ;
+         @media(max-width:330px){
+               font-size: 12px ;
+         }
+         
+         li+li{
+             margin-top: 5px;
+         }
+         .op{
+             
+             //分隔符
+             .fgf{
+                 margin: 0 2px;
+                 color:@text-ash-2;
+             }
+             a{
+                 color:@text-base;
+                 
+                 &:active{
+                     color:@text-warning;
+                 }
+                 
+                
+             }
+             
+             
+         }
+         
+         //备注下面横线
+         .remark
+         {
+             margin-top:10px;
+             padding-top: 10px;
+            border-top: 1px solid @text-ash-2;
+         }
+    }
+    
+      
+            
+            
+   }
+

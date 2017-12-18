@@ -1,0 +1,63 @@
+
+/***其他****/
+
+//置顶
+.zhiding{
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    z-index: 9998;
+    display: none;
+    
+    
+    .iconfont{
+        color:@text-base;
+        font-size: 42px;
+    }
+}
+
+//三联选择地址
+    .mui-poppicker-body .mui-picker {
+        background: #fff;
+    }
+    .mui-poppicker-body .mui-picker ul li {
+        color: #666;
+    }
+    .mui-pciker-rule.mui-pciker-rule-ft {
+//      background: orange;
+//      opacity: .5;
+    }
+
+//确定按钮
+.mui-btn.mui-btn-blue.mui-poppicker-btn-ok{
+    background: @text-danger;
+    color:#fff;
+    border: 1px solid darken(@text-danger,10%);
+}
+
+//取消按钮
+.mui-btn.mui-poppicker-btn-cancel{
+  background: @text-warning;
+    color:#fff;
+    border: 1px solid darken(@text-warning,10%);  
+}
+
+//选中项的样式
+.mui-pciker-list li.highlight{
+    color:@text-warning !important;
+}
+
+
+
+// 兼容苹果文件上传 v-hide类 
+input[type='file'].v-hide{
+  
+    position: absolute  !important;
+    display: inline-block !important;
+    text-indent: -99999px;
+    margin:  -2px !important;
+    padding: 0 !important;
+    width: 0 !important;
+    height: 0 !important;
+    outline: none !important;
+}

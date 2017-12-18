@@ -1,0 +1,118 @@
+
+/******今日上市******/
+
+.jinriss{
+    
+  margin-bottom: 10px;
+}
+
+
+
+
+.jinriss-item{
+    
+    margin-top: 10px;
+    padding: 10px 10px 10px 10px;
+    background: @text-white;
+    
+    //图片
+    img{
+        width: 140px;
+        height: 160px;
+    }
+    
+    .jinriss-item-ms{
+      
+        padding:0 0 5px 10px;
+    }
+    //h4
+    h4{
+        line-height:24px;
+        height: 48px;
+        font-size: 16px;
+        font-weight: 400;
+        
+        
+    }
+    
+    .mui-row+.mui-row {
+        margin-top: 5px;
+    }
+  
+    //立即购买
+    
+    
+
+    .jinriss-item-btn{
+        margin-top: 10px;
+        height: 28px;
+            line-height: 28px;
+        .pb{
+            height: 28px;
+            line-height: 28px;
+            font-size: 16px;
+        }
+        .btn{
+        .create-btn(@text-danger,28px,80px);
+        }
+        
+        strong{
+            font-weight: 400;
+        }
+    }
+}
+
+
+
+//320
+@media (max-width:399px ) {
+  
+
+.jinriss-item{
+    
+    margin-top: 10px;
+    padding: 10px 10px;
+    background: @text-white;
+    
+    //图片
+    img{
+        width: 120px;
+        height: 140px;
+    }
+    
+    .jinriss-item-ms{
+      
+        padding:0 0 5px 5px;
+    }
+    //h4
+    h4{
+        line-height:20px;
+        height: 40px;
+        font-size: 16px;
+        
+    }
+    
+    .mui-row+.mui-row {
+        margin-top: 5px;
+    }
+  
+    //立即购买
+    
+    
+
+    .jinriss-item-btn{
+        margin-top: 10px;
+        height: 24px;
+            line-height: 24px;
+        .pb{
+            height: 24px;
+            line-height: 24px;
+            font-size: 14px;
+        }
+        .btn{
+        .create-btn(@text-danger,24px,70px);
+        }
+    }
+}
+
+}

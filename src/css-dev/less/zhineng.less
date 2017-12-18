@@ -1,0 +1,81 @@
+/***智能订购*****/
+
+.zhineng {}
+
+.zhineng-ttl {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    background: #fff;
+    border-bottom: 1px solid @text-ash-3;
+    
+}
+
+//checkbox
+.comp-checkbox-item {
+    height: 24px;
+    line-height: 24px;
+    float: left;
+    label {
+        font-size: 12px;
+        @media (min-width: 400px) {
+            font-size: 14px;
+        }
+    }
+    &+.comp-checkbox-item {
+        margin-left: 6px;
+        vertical-align: middle;
+    }
+    input[type=checkbox] {
+        vertical-align: middle;
+    }
+}
+
+//每一项
+.zhineng-item {
+    margin-bottom: 10px;
+    padding: 15px 10px 15px 15px;
+    background: #fff;
+    ul {
+        padding: 0;
+        margin: 0;
+        font-size: 14px;
+        @media(max-width: 400px) {
+            font-size: 12px;
+        }
+        li+li {
+            margin-top: 5px;
+        }
+        .op {
+            //分隔符
+            .fgf {
+                margin: 0 2px;
+                color: @text-ash-2;
+            }
+            a {
+                &:active {
+                    color: @text-warning;
+                }
+            }
+        }
+        //数字框
+        .number-box {
+            width: 100%;
+            height: 24px;
+            line-height: 24px;
+            label {
+                display: inline-block;
+                height: 24px;
+                float: left;
+            }
+            .number {
+                line-height: 24px;
+                .create-num(80px);
+                float: none;
+            }
+        }
+    }
+    &+.zhineng-item {
+        margin-top: 10px !important;
+    }
+}

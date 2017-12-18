@@ -1,0 +1,315 @@
+/*****首页******/
+
+//头部
+.index-header.mui-bar {
+    input[type='search'] {
+        font-size: 14px;
+        background: @text-ash-2;
+    }
+}
+
+.index {
+    //轮播图
+    .mui-slider {
+        img {
+            min-height: 200px;
+            max-height: 300px;
+        }
+        //轮播图片圆点
+        .mui-indicator {
+            width: 10px;
+            height: 10px;
+            &+.mui-indicator {
+                margin-left: -3px;
+            }
+        }
+        //选择的样式
+        .mui-indicator.mui-active {}
+    }
+}
+
+//二级导航
+.index-nav {
+    width: 100%;
+    height: 50px !important;
+    padding: 0 10px;
+    background: #fff !important;
+    .mui-scroll {}
+    .mui-control-item {
+        padding: 0 5px !important;
+        line-height: 50px !important;
+        font-size: 14px !important;
+    }
+    //选中样式
+    .mui-control-item.mui-active {
+        color: @text-danger !important; //字体颜色
+        border-bottom: none !important;
+    }
+    .mui-control-item+.mui-control-item:before {
+        content: '|';
+        padding-right: 5px;
+        color: @text-ash-3;
+        font-weight: 200;
+        font-size: 14px;
+    }
+}
+
+//今日上市
+.index-new {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #fff;
+    .mui-col-xs-3 {
+        padding: 10px 10px;
+        text-align: center;
+        img {
+            max-width: 90%;
+            height: auto;
+        }
+        h5 {
+            text-align: center;
+            margin-top: 10px;
+            font-family: "微软雅黑";
+            font-weight: 600;
+            color: #777;
+        }
+    }
+}
+
+//编辑精选
+.index-jx {
+    li {
+        position: relative;
+        padding: 10px 5px !important;
+    }
+    .mui-table-view img {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    .item {
+        position: relative !important;
+    }
+    //上层数字
+    .item-caption {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding-top: 10%;
+        width: 100%;
+        height: 100%;
+        background: rgba(54, 54, 54, .3);
+        font-weight: bold;
+        h4,
+        h5 {
+            text-align: center;
+            color: #fff;
+        }
+        ;
+        h4 {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+        h5 {
+            font-size: 14px;
+        }
+    }
+}
+
+//编辑精选ttl
+.index-jx-ttl {
+    margin-top: 10px;
+    position: relative;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 10px 0 30px;
+    background: @text-white;
+    i {
+        position: absolute;
+        top: 25px;
+        left: 0px;
+        display: block;
+        height: 10px;
+        width: 20px;
+        background: @text-danger;
+    }
+    h4 {
+        margin: 0;
+        height: 60px;
+        line-height: 60px;
+        font-size: 16px;
+        font-weight: 200;
+        color: @text-base;
+    }
+    ;
+    a {
+        color: @text-base;
+    }
+}
+
+//编辑精选
+.index-jx-img {
+    width: 100%;
+    min-height: 200px;
+    max-height: 300px;
+}
+
+//百度百科
+.index-jx-bk {
+    margin-top: -5px;
+    padding: 5px 10px;
+    background: @text-white;
+    .bkgm {
+        margin-bottom: 5px;
+    }
+    h4 {
+        font-size: 16px;
+        color: @text-777;
+        font-weight: 200;
+    }
+    button.btn {
+        height: 24px;
+        width: 90px;
+        padding: 0;
+        border: none;
+        line-height: 24px;
+        background: @text-danger;
+        border: 1px solid darken(@text-danger, 5%);
+        color: @text-white;
+        text-align: center;
+        &:hover {
+            background: darken(@text-danger, 10%);
+        }
+    }
+    p {
+        height: 24px;
+        overflow: hidden;
+        line-height: 24px;
+        text-indent: 20px;
+    }
+}
+
+//热卖爆款
+.index-jm {
+    position: relative;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 10px 0 30px;
+    i {
+        position: absolute;
+        top: 25px;
+        left: 0px;
+        display: block;
+        height: 10px;
+        width: 20px;
+        background: @text-danger;
+    }
+    h4 {
+        margin: 0;
+        height: 60px;
+        line-height: 60px;
+        font-size: 16px;
+        color: @text-base;
+        font-weight: 200;
+    }
+    ;
+    a {
+        color: @text-base;
+    }
+}
+
+//首页商品
+.index-item-cont {
+    position: relative;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 14px;
+    background: #fff;
+    //图片
+    .img {
+        display: block;
+        float: left;
+        padding-left: 5px;
+        //width: 100px;
+        height: 150px;
+    }
+    //列表ul
+    .list {
+        position: relative;
+        display: block;
+        float: right;
+        margin: 0;
+        padding: 0 8px;
+        font-size: 12px;
+        h4 {
+            margin-bottom: 10px;
+            height: 40px;
+            line-height: 20px;
+            font-size: 14px;
+            color: @text-777;
+            font-weight: 200;
+        }
+        .iconfont {
+            margin-right: -3px;
+            font-size: 14px;
+        }
+        .nums {
+            margin-top: 25px;
+            font-size: 14px;
+        }
+        .btn-lj {
+            .create-btn(@text-danger, 24px, 80px);
+            border-radius: 4px;
+        }
+    }
+}
+
+// 打折优惠icon
+.index-item-cont .discount-icon {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 2;
+    //iconfont
+    .iconfont {
+        font-size: 24px;
+        color: @text-danger;
+    }
+}
+
+// 打折优惠 ttl
+.index-item-cont .discount-ttl {
+    position: absolute;
+    top: 98px;
+    left: 7px;
+    z-index: 2;
+    padding: 2px 3px;
+    font: 12px "微软雅黑";
+    max-width: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    a {
+        padding: 1px 3px;
+        background: #fff;
+        border: 1px solid lighten(@text-danger, 15%);
+        color: @text-danger;
+    }
+    span {
+         
+        color: @text-777;
+    }
+}
+
+//底部index-footer
+.index-footer {
+    background: @text-white;
+    .mui-tab-item.mui-active {
+        color: @text-danger !important;
+    }
+    //icon
+    .iconfont {
+        font-size: 20px;
+    }
+    &.mui-bar.mui-bar-tab {}
+}

@@ -1,0 +1,101 @@
+
+/*对账单*/
+
+.duizhang{
+    margin-top: 10px;
+    padding: 10px;
+    background: #fff;
+}
+
+.duizhang-dt{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    
+    li
+    {
+      padding:0 5px;
+        
+     a{
+        
+        display: inline-block;
+        width: 100%;
+        padding: 3px;
+       
+        margin-bottom: 10px;
+        
+        color:@text-777;
+        border:1px solid @text-ash-2;
+      
+            
+           
+        }
+        
+       //选中样式
+         &.active a{
+           border:1px solid @text-danger;
+           color:@text-danger; 
+        }
+    }
+
+}
+
+
+.duizhang-bar{
+    padding: 0 15px;
+    
+    li{
+       
+       
+       padding: 10px ;
+        background: #333;
+        color:#fff;
+        
+            h4,
+            .qihuo
+            {
+           
+                float: left;
+            }
+            
+            h4{
+          
+             padding: 0 10px;
+               font-size: 24px;
+               color:#fff;
+             vertical-align: middle;
+               margin-right: 10px;
+            }
+            
+             .qihuo{
+                 padding-top: 2px;
+                 height: 28px;
+                
+                 line-height: 28px;
+               vertical-align: middle;
+                 .t1,.t2{
+                   
+                  line-height: 14px;
+                  height: 14px;
+                    display: block; 
+                    font-size: 12px;
+                 }
+             }
+             
+             
+             .mui-icon{
+                 margin-top: 2px;
+                 font-size: 28px;
+             }
+            
+        
+   
+   //相连每一项
+       &+li{
+           
+           margin-top: 30px;
+       }
+    }
+    
+  
+}

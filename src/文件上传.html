@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="Keywords" content="" />
+    <meta name="Description" content="" />
+    <title>文件上传</title>
+    <link rel="stylesheet" type="text/css" href="Content/Home/cstfont/iconfont.css" />
+    <link rel="stylesheet" href="Content/Home/all.css" />
+    <style type="text/css">
+    	
+    	
+    </style>
+   
+</head>
+<body>
+    <header class="mui-bar mui-bar-nav">
+        <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+        <h1 class="mui-title">文件上传</h1>
+    </header>
+
+    <div class="mui-content">
+        <input type="file" name="fileUp" id="fileUp" value="" />
+       
+		<div class="progress-box">
+			<!-- 点击提交按钮-->	
+			<input type="button" name="up" id="up" value="上传" />
+			
+			<!--进度条-->
+			<div class="progress-all">
+				<div class="progress-now"></div>
+				<div class="progress-num">0%</div>
+			</div>
+			
+		</div>
+
+
+       
+
+
+    </div>
+
+   <script src="js/Home/all.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+    	
+    	
+
+        $("#up").on("click", function () {
+
+				var file=document.getElementById("fileUp").files[0];
+			
+            	h5File.upload({
+            		data:file,
+            		url:"index.html",
+            		outTime:30000,
+            		el:$(this),
+            		size:1000000 ,//1m=1000000
+            		seccess:function(){},//成功回调
+            		error:function(){} //错误回调
+            	
+            	});//调用上传接口
+
+
+		});
+
+
+
+
+    </script>
+</body>
+
+</html>

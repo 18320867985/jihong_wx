@@ -1,0 +1,187 @@
+/*******商品详情******/
+
+.proddtl {
+    img {
+        width: 100%;
+        min-height: 200px;
+        max-height: 300px;
+        margin: 0 !important;
+    }
+}
+
+//商品图片
+.proddtl-ms {
+    padding: 10px;
+    margin-top: -5px;
+    background: #fff;
+    h4 {
+        height: 48px;
+        line-height: 24px;
+        overflow: hidden;
+        font-size: 18px;
+        color: @text-777;
+        font-weight: 200;
+    }
+    .dj {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        padding-right: 10px;
+        //爱心图标
+        .icon-heart {
+            margin-left: 10px;
+            &:active {
+                color: @text-danger;
+            }
+        }
+    }
+    //ul 列表
+    ul {
+        padding: 0;
+        padding-top: 20px;
+        border-top: 1px solid @text-ash-2;
+        li+li {
+            margin-top: 10px;
+        }
+        // 打折优惠 ttl
+        .discount-ttl {
+            position: relative;
+           
+            padding: 2px;
+            max-width: 250px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            a {
+                background: #fff;
+                padding: 2px 3px;
+                color: @text-danger;
+                font: 12px "微软雅黑";
+                border: 1px solid lighten(@text-danger, 15%);
+            }
+            span {
+                color: @text-777;
+                font-size: 12px;
+            }
+            
+            &+.discount-ttl{
+                margin-top: 5px;
+            }
+        }
+    }
+    //单选按钮
+    .comp-radio {
+        .comp-radio(@text-danger;
+        0 5px;
+        @text-ash-2;
+        );
+        vertical-align: bottom;
+    }
+    ;
+}
+
+//商品数量按钮
+.proddtl-cnt {
+    margin-top: 10px;
+    padding: 20px 10px;
+    background: #fff;
+    label {
+        display: inline-block;
+        height: 30px;
+        line-height: 30px;
+        float: left;
+    }
+    .number {
+        float: left;
+        .create-num(90px, 30px);
+    }
+    //类似商品
+    .btn {
+        .create-btn(@text-danger, 30px, 100px);
+    }
+}
+
+//商品简介
+.proddtl-des {
+    padding: 20px 10px 10px 10px;
+    background: #fff;
+    h5 {
+        padding-bottom: 20px;
+        margin-bottom: 10px;
+        font-size: 16px;
+        font-weight: 200;
+        color: @text-777;
+        border-bottom: 1px solid @text-ash-2;
+    }
+    ;
+    p {
+        text-indent: 25px;
+        color: @text-999;
+        font-size: 14px;
+        line-height: 21px;
+    }
+}
+
+//商品详情与咨询
+.proddtl-dtl {
+    padding: 20px 10px 10px 10px;
+    //按钮组
+    .btns {
+        margin-bottom: 20px;
+        .btn {
+            margin: 0 !important;
+            float: left;
+            .create-btn-outline(@text-ash-2, 34px, 80px);
+            color: @text-777;
+            border-radius: 0;
+            &+.btn {
+                border-left: none;
+            }
+            //active
+            &.mui-active {
+                .create-btn(@text-danger, 34px, 80px)
+            }
+        }
+        //图片
+        img {
+            margin-top: 10px;
+            margin-top: 10px;
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+//底部
+.proddtl-footer {
+    text-align: center;
+    ;
+    .mui-tab-label {
+        display: block;
+    }
+    //info
+    .info {
+        padding-top: 5px;
+        a {
+            color: @text-777;
+            &:active {
+                color: @text-danger;
+            }
+        }
+    }
+    //btns
+    .btns {
+        position: relative;
+        height: 50px;
+        line-height: 50px;
+        .btn-w {
+            .create-btn(@text-warning, 100%, 50%);
+            float: left;
+            line-height: 50px !important;
+        }
+        .btn-d {
+            .create-btn(@text-danger, 100%, 50%);
+            float: left;
+            line-height: 50px !important;
+        }
+    }
+}

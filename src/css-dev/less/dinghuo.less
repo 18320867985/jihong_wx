@@ -1,0 +1,80 @@
+
+/*****订单列表-经销商****/
+
+.dinghuo-head {
+ 
+    .mui-scroll-wrapper{
+        border-top:1px solid @text-ash-2;
+    }
+    .txt {
+        margin-left: 5px;
+        width: 88%;
+        input[type='search'] {
+            float: left;
+            width: 86.5%;
+            font-size: 14px;
+             height: 30px;
+            line-height: 30px;
+        }
+        button {
+            height:30px;
+            line-height: 30px;
+            margin: 7px 0 0 5px;
+            padding: 0;
+            font-size: 14px;
+            border: none;
+            background: none;
+            
+            &:active{
+              color: @text-danger;  
+            }
+        }
+    }
+}
+
+
+//每一项
+.dinghuo-item{
+    
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px 10px;
+    background: #fff;
+    
+    ul{
+         padding: 0;
+         margin: 0;
+         font-size: 14px ;
+         
+         @media (max-width:330px){
+            font-size: 12px ;  
+         }
+         
+         li+li{
+             margin-top: 5px;
+         }
+         .op{
+             
+             //分隔符
+             .fgf{
+                 margin: 0 2px;
+                 color:@text-ash-2;
+             }
+             a{
+                 color:@text-base;
+                 
+                 &:active{
+                     color:@text-warning;
+                 }
+                 
+                
+             }
+             
+             
+         }
+    }
+    
+      
+            
+            
+   }

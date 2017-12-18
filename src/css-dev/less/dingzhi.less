@@ -1,0 +1,82 @@
+
+/**定制订单列表**/
+ .dingzhi{
+    
+  margin-bottom: 10px;
+}
+
+
+
+.dingzhi-item{
+    
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+   
+     font-size:14px ;
+     background: #fff;
+    
+   
+    //图片
+    .img{
+        display: block;
+        float: left;
+        padding-left: 5px;
+        //width: 100px;
+        height: 120px;
+        
+      }
+    
+        //列表ul
+        .list{
+            display: block;
+            float: right;
+            margin: 0;
+            padding: 0 8px;
+           
+             font-size:12px ;
+             
+           @media(min-width:400px){
+               
+                 font-size:14px ;
+           }
+            h4
+            {
+                margin-bottom: 10px;
+                height: 40px;
+                line-height: 20px;
+                font-size:14px ;
+                color:@text-777;
+                font-weight: 200;
+            }
+          .iconfont{
+            margin-right: -3px;
+            font-size: 14px;
+          }
+          
+          .nums{
+              margin-top: 25px;
+              font-size: 14px;
+          }
+          
+         .btn-lj{
+             
+           .create-btn(@text-danger,24px,80px);
+            border-radius: 4px ;
+              
+          }
+         
+         li+li{
+             margin-top: 6px;
+         }
+    }
+    
+    //购物车图标
+    
+    .icon-gouwuche{
+        position: absolute;
+        right: 15px;
+        bottom: 5px;
+    }
+}

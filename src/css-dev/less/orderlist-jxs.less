@@ -1,0 +1,59 @@
+
+/*****订单列表-经销商****/
+
+.orderlistjxs{
+   
+
+}
+
+
+//每一项
+.orderlistjxs-item{
+    
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background: #fff;
+    
+    ul{
+         padding: 0;
+         font-size: 14px;
+      
+         
+         li+li{
+             margin-top: 5px;
+          
+         }
+         .op{
+             
+             //分隔符
+             .fgf{
+                 margin: 0 2px;
+                 color:@text-ash-2;
+             }
+             a{
+                 color:@text-base;
+                 
+                 &:active{
+                     color:@text-warning;
+                 }
+                 
+                
+             }
+             
+             
+         }
+    }
+    
+      @media(max-width:330px ) {
+                li.width-320{
+           
+                    .mui-col-xs-7,
+                     .mui-col-xs-5
+                    {width: 50% !important;}
+                }
+            }
+            
+            
+            
+  }

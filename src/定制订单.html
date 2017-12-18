@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="Keywords" content="" />
+		<meta name="Description" content="" />
+		<title>定制订单</title>
+		<link rel="stylesheet" type="text/css" href="Content/Home/cstfont/iconfont.css" />
+		<link rel="stylesheet" href="Content/Home/all.css" />
+		
+	</head>
+
+	<body>
+		<!--头部-->
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left text-base"></a>
+			<h1 class="mui-title">定制订单</h1>
+		</header>
+
+		<!--主体内容-->
+		<section class="mui-content ">
+
+			<!--定制订单-->
+			<div class="dingzhi-e">
+
+				<div class="form">
+					<div class="mui-row mui-row-group mui-clearfix">
+						<div class="mui-col-xs-2 ">
+							<label for="" class="mui-text-muted-bs">商品名称</label>
+						</div>
+						<div class="mui-col-xs-10">
+							<input type="text" name="" id="" value="" class=" mui-form-control mui-form-control-focus" placeholder="发财树" />
+						</div>
+					</div>
+
+					<div class="mui-row mui-row-group">
+						<div class="mui-col-xs-2 ">
+							<label for="" class="mui-text-muted-bs">规格</label>
+						</div>
+						<div class="mui-col-xs-10 ">
+							<input type="text" name="" id="" value="" class=" mui-form-control mui-form-control-focus" placeholder="80#" />
+						</div>
+					</div>
+					<div class="mui-row mui-row-group">
+						<div class="mui-col-xs-2 ">
+							<label for="" class="mui-text-muted-bs">型号</label>
+						</div>
+						<div class="mui-col-xs-10 ">
+							<input type="text" name="" id="" value="" class=" mui-form-control mui-form-control-focus" placeholder="A" />
+						</div>
+					</div>
+					<div class="mui-row mui-row-group">
+						<div class="mui-col-xs-2 ">
+							<label for="" class="mui-text-muted-bs">供应商</label>
+						</div>
+						<div class="mui-col-xs-10 ">
+							<input type="text" name="" id="" value="" class=" mui-form-control mui-form-control-focus" placeholder="吉宏园艺" />
+						</div>
+					</div>
+					<div class="mui-row mui-row-group">
+						<div class="mui-col-xs-2 ">
+							<label for="" class="mui-text-muted-bs">单位</label>
+						</div>
+						<div class="mui-col-xs-10 ">
+							<input type="text" name="" id="" value="" class="mui-form-control mui-form-control-focus" placeholder="箱" />
+						</div>
+					</div>
+					<div class="mui-row mui-row-group">
+						<div class="mui-col-xs-2 ">
+							<label for="" class="mui-text-muted-bs">装箱数量</label>
+						</div>
+						<div class="mui-col-xs-10 ">
+							<input type="text" name="" id="" value="" class="mui-form-control mui-form-control-focus" placeholder="20" />
+						</div>
+					</div>
+					<div class="mui-row mui-row-group">
+						<div class="mui-col-xs-2 ">
+							<label for="" class="mui-text-muted-bs">单价</label>
+						</div>
+						<div class="mui-col-xs-10 ">
+							<input type="text" name="" id="" value="" class="mui-form-control mui-form-control-focus" placeholder="￥10" />
+						</div>
+					</div>
+					
+					<div class="mui-row mui-row-group">
+						<div class="mui-col-xs-2 ">
+							<label for="" class="mui-text-muted-bs">备注</label>
+						</div>
+						<div class="mui-col-xs-10 ">
+							<input type="text" name="" id="" value="" class="mui-form-control mui-form-control-focus" placeholder="输入备注信息" />
+						</div>
+					</div>
+						
+					<div class="mui-row mui-row-group">
+						<div class="mui-col-xs-2 ">
+							<label for="" class="mui-text-muted-bs">时间</label>
+						</div>
+						<div class="mui-col-xs-10 ">
+							<input type="text" name="" id="" value="" class="mui-form-control mui-form-control-focus mui-date"  data-options='{"beginYear":2010,"endYear":2050}'  placeholder="输入时间" />
+						</div>
+					</div>
+					
+
+					<div class="mui-row mui-row-group">
+						<div class="mui-col-xs-2 ">
+							<label for="" class="mui-text-muted-bs">上传图片</label>
+						</div>
+						<div class="mui-col-xs-10 progress-box">
+							<input class="file-up mui-form-control mui-form-control-focus" type="" name="" id="" value="" readonly="readonly" placeholder="选择上传的图片" />
+							<button id="btn-up" class="btn-up" type="button">选择文件</button>
+
+							<input class="v-hide" type="file" name="" id="fileUp" value="" accept="" />
+							<!--进度条-->
+							<div class="mui-clearfix"></div>
+							<div class="progress-all v-hide  mui-clearfix" style="margin-top: 10px !important;">
+								<div class="progress-now"></div>
+								<div class="progress-num">0%</div>
+
+							</div>
+						</div>
+					</div>
+
+					<div class="mui-row mui-row-group mui-clearfix">
+						<div class="mui-col-xs-2 ">
+							<label for="" class="mui-text-muted-bs"></label>
+						</div>
+						<div class="mui-col-xs-10 img-big">
+
+						</div>
+					</div>
+
+					<div class="mui-row mui-row-group mui-clearfix">
+						<div class="mui-col-xs-2 ">
+							<label for="" class="mui-text-muted-bs"></label>
+						</div>
+						<div class="mui-col-xs-10 ">
+							<button class="mui-btn-block btn-submit">定制</button>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+		</section>
+
+		<script src="js/Home/all.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/Home/mui.picker.min.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			
+			// 文件上传
+			$("#btn-up").on("click", function() {
+
+				$("#fileUp").click();
+
+			});
+
+			$("#fileUp").change(function() {
+
+				fileupff(this);
+
+			});
+			
+			// 调用上传接口
+			var fileupff = function(obj) {
+
+				$(obj).parents(".progress-box").find(".progress-all").show();
+				var file = document.getElementById("fileUp").files[0];
+				h5File.upload({
+					data: file, // 选择的文件
+					url: "./index.html", // 上传网址
+					outTime: 30000,
+					el: $(obj), // 当前element
+					size: 300000000, // 1m=1000000
+					seccess: function(data) {
+						createElement("./images/Home/banner.png");
+						$(obj).parents(".progress-box").find(".progress-all").hide();
+						//alert("success");
+					}, 
+					// 成功回调
+					error: function(data) {
+						
+						//test
+						createElement("./images/Home/banner.png");
+						$(obj).parents(".progress-box").find(".progress-all").hide();
+					} //错误回调
+
+				});
+			}
+
+			
+
+			//删除图片
+			function closeFn(obj) {
+				compt.confirm("是否要删除该图片？",function(){
+					
+					//删除成功todo...
+					$(obj).parents(".upload-img-big").remove();
+				})
+				
+			}
+		
+			// 提交  遍历上传图片url
+			$(".btn-submit").on("tap",function(e){
+				e.preventDefault();
+				var els=document.querySelectorAll(".upload-img-big");
+				
+				var urls="";
+				els.forEach(function(item,index){
+					urls+=$(item).find("input[type=text]").val()+"#";
+					
+				})
+				
+				mui.alert(urls);
+			})
+
+			// 创建元素
+			function createElement(url) {
+
+				var url = url;
+				var div = document.createElement("div");
+				
+				div.className = "upload-img-big";
+				span = document.createElement("span");
+				span.innerHTML = "&times;";
+				span.setAttribute("onclick", "closeFn(this)");
+				span.classList.add("close");
+				div.appendChild(span);
+				var img = document.createElement("img");
+				img.src = url;
+				div.appendChild(img);
+				var input = document.createElement("input");
+				input.type = "text";
+				input.value = url;
+				div.appendChild(input);
+				document.querySelector(".dingzhi-e .img-big").insertBefore(div,null);
+
+			}
+			
+			
+			// 选择日期
+			(function($) {
+			
+				var btns = $('.mui-date');
+				btns.each(function(i, btn) {
+					btn.addEventListener('tap', function() {
+						var _self = this;
+						if(_self.picker) {
+							_self.picker.show(function (rs) {
+								_self.value=rs.text;
+								_self.picker.dispose();
+								_self.picker = null;
+							});
+						} else {
+							var optionsJson = this.getAttribute('data-options') || '{}';
+							var options = JSON.parse(optionsJson);
+							var id = this.getAttribute('id');
+					
+							_self.picker = new $.DtPicker(options);
+							_self.picker.show(function(rs) {
+								_self.value=rs.text;
+							
+								_self.picker.dispose();
+								_self.picker = null;
+							});
+						}
+						
+					}, false);
+				});
+			})(mui);
+			
+		</script>
+	</body>
+
+</html>

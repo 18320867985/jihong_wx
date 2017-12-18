@@ -1,0 +1,195 @@
+
+
+/**订单详情***/
+    
+//.orderdtl{
+//  
+//}
+
+//订单详情每一项
+.orderdtl-item{
+    margin-top: 10px;
+    padding: 10px;
+    background: @text-white;
+    
+    ul{
+        margin: 0;
+    }
+}
+
+//订单详情信息描述
+.orderdtl-item-ms{
+    
+    li+li{
+        margin-top: 5px;
+    }
+    
+    //查看相似 ，再次购买的按钮
+    .btns{
+        margin: 10px 5px;
+        
+     .btn-w{
+            .create-btn(@text-warning,30px, 100px);
+        }
+        
+        .btn-d{
+            margin-left: 20px;
+            .create-btn(@text-danger,30px, 100px);
+        }
+    }
+}
+
+//商品清单图
+.orderdtl-item-img{
+    //ttl
+    h3{
+        margin-left: 5px;
+        margin-bottom: 15px;
+        font-size: 16px;
+        font-weight: 200;
+    };
+    
+    img{
+        display: block;
+        float: left;
+        width: 130px;
+        height: 140px;
+        margin-right: 15px;
+        border:none;
+    }
+    
+   
+    
+    ul{
+        
+        margin-left: 0;
+     
+       
+        border: none;
+        
+        li+li{
+            margin-top:8px;
+        }
+       
+    }
+    
+     
+         h4{
+             height: 40px;
+            line-height: 20px;
+            font-size: 14px;
+            font-weight: 200;
+       
+            color:@text-777;
+           }
+    
+
+}
+
+
+//订单信息
+.orderdtl-item-xx{
+    
+   
+    background: #fff;
+    padding-bottom: 10px;
+   
+      h3{
+        margin-left: 5px;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        font-size: 16px;
+        font-weight: 200;
+   
+        
+        border-bottom: 1px solid @text-ash-3;
+    };
+    
+    ul{
+        padding-left: 10px;
+        
+        li+li{
+            margin-top: 5px;
+        }
+    }
+
+
+}
+
+
+//订单金额
+
+.orderdtl-item-je{
+
+    padding: 0 10px;
+    background: @text-white;
+    
+    //ttl
+    ul.ttl-list{
+       
+       padding: 15px ;
+       border-bottom:1px solid @text-ash-2;
+        li{
+           float:left;
+         
+           
+             &.active
+             {
+                 color: @text-danger;
+           } 
+        }
+        
+        li+li:before{
+            
+            content:'|';
+            color:@text-ash;
+            margin: 0 10px;
+            font-weight: 200;
+        }
+        
+    }
+    
+    
+    //content
+    ul.cont-list{
+        padding: 10px;
+        li+li{
+            margin-top:5px;
+        }
+        
+    }
+}
+
+
+//订单总金额
+.orderdtl-item-ct{
+ padding: 10px;
+ background: @text-white;
+ ul{ padding: 10px;
+ 
+     padding-bottom: 10px;
+     margin-bottom: 10px;
+     border-bottom: 1px solid @text-ash-2;
+     
+     li+li{
+         margin-top: 5px;
+     }
+ }
+ 
+ .cont-je{
+     padding: 10px ;
+     font-weight: bold;
+      label{
+         font-weight: 200;
+     }
+ }
+    
+}
+
+
+//删除订单
+.orderdtl-item-del{
+    margin-bottom: 10px;
+}
+
+

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="Keywords" content="" />
+		<meta name="Description" content="" />
+		<title>确认订单</title>
+		<link rel="stylesheet" type="text/css" href="Content/Home/cstfont/iconfont.css" />
+		<link rel="stylesheet" href="Content/Home/all.css" />
+	</head>
+
+	<body>
+
+		<!--头部-->
+		<header class="mui-bar mui-bar-nav bg-white" >
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left text-base"></a>
+			<h1 class="mui-title">确认订单</h1>
+		</header>
+
+		<!-- 底部--->
+		<nav class="index-footer mui-bar mui-bar-tab">
+			<a class="mui-tab-item mui-active" href="#">
+				<span class="mui-icon mui-icon-home"></span>
+				<span class="mui-tab-label">首页</span>
+			</a>
+			<a class="mui-tab-item">
+				<span class="mui-icon iconfont icon-fenlei"></span>
+				<span class="mui-tab-label">分类</span>
+			</a>
+			<a class="mui-tab-item">
+				<span class="mui-icon iconfont icon-gouwuche"></span>
+				<span class="mui-tab-label">购物车</span>
+			</a>
+			<a class="mui-tab-item">
+				<span class="mui-icon  iconfont icon-ren-copy"></span>
+				<span class="mui-tab-label">我的</span>
+			</a>
+		</nav>
+
+		<!--主体内容-->
+		<section class="conforder   mui-content index">
+			
+			<div class="conforder-item  conforder-item-ms mui-clearfix">
+
+				<!--订单描述-->
+				<ul class=" mui-table-view  mui-clearfix" v-for="item of addressList" v-if="item.isCk"		>
+					<li class=" mui-row" v-on:click="addressChange()">
+						<div class="mui-col-xs-10 mui-ellipsis-2">
+							<label for="">收货地址:</label>
+							<span class="text-999" v-text="item.addr"></span>
+							
+							
+						</div>
+						<div  class="mui-col-xs-2 mui-text-right">
+							<span class="mui-icon mui-icon-arrowright text-777" ></span>
+						</div>
+
+					</li>
+					<li>	
+						
+						<p> <span v-text="item.name"></span>
+							<span v-text="item.phone"></span>
+						</p>
+						
+					</li>
+					
+				
+				</ul>
+
+			</div>
+
+			<!--商品清单-->
+			<div class="conforder-item conforder-item-img  ">
+				<h3>送货清单</h3>
+				<div class="mui-clearfix">
+					<img class="mui-pull-left" src="images/Home/商品清单图片.png" alt="送货清单图" />
+					<ul class=" ">
+						<li>
+							<h4 class="mui-ellipsis-2">发财树办公家庭创意盆栽自动吸水净化空气</h4>
+						</li>
+						<li>
+							<span class="iconfont icon-renminbi text-danger"></span>
+							<span class="text-danger">25.60/盆</span>
+
+						</li>
+						<li><span class="text-base">X10箱</span></li>
+						<li>
+							<span>1箱(20盆)</span>
+						</li>
+					</ul>
+
+				</div>
+			</div>
+			<!--订单信息-->
+			<div class="conforder-item conforder-item-xx">
+				<h3>订单信息</h3>
+
+				<ul class="">
+					<li>
+						<label for="">收货人姓名:</label>
+						<span></span>
+					</li>
+
+					<li>
+						<label for="">详细地址:</label>
+						<span></span>
+					</li>
+					<li>
+						<label for="">手机号码:</label>
+						<span></span>
+					</li>
+					<li>
+						<label for="">订单备注:</label>
+						<span></span>
+					</li>
+
+				</ul>
+
+			</div>
+
+			<!--订单金额列表-->
+			<div class="conforder-item conforder-item-je">
+
+				<ul class="ttl-list mui-clearfix">
+					<li>金额明细</li>
+
+				</ul>
+
+				<ul class="cont-list">
+					<li class="mui-row mui-clearfix">
+						<div class="mui-col-xs-6">
+							<label for="">商品金额:</label>
+							<span>0.00</span>
+						</div>
+
+						<div class="mui-col-xs-6">
+							<label for="">配送方式:</label>
+							<span>顺丰快递</span>
+						</div>
+
+					</li>
+					<li class="mui-row mui-clearfix">
+						<div class="mui-col-xs-6">
+							<label for="">运费:</label>
+							<span>0.00</span>
+						</div>
+
+						<div class="mui-col-xs-6">
+							<label for="">支付方式:</label>
+							<span>微信支付</span>
+						</div>
+
+					</li>
+					<li class="mui-row mui-clearfix">
+						<div class="mui-col-xs-6">
+							<label for="">支付手续费:</label>
+							<span>0.00</span>
+						</div>
+
+						<div class="mui-col-xs-6">
+							<label for="">发票抬头:</label>
+							<span>0.00</span>
+						</div>
+
+					</li>
+
+					<li class="mui-row mui-clearfix">
+						<div class="mui-col-xs-8">
+							<label for="">订单涨价或降价金额:</label>
+							<span>0.00</span>
+						</div>
+
+						<div class="mui-col-xs-4">
+							<label for="">税金:</label>
+							<span>0.00</span>
+						</div>
+
+					</li>
+
+				</ul>
+
+			</div>
+
+			<!--订单总金额-->
+			<div class="conforder-item conforder-item-ct">
+
+				<ul class="cont-list">
+					<li class="mui-row mui-clearfix">
+						<label class="mui-pull-left" for="">商品金额:</label>
+						<span class="mui-pull-right text-danger">2580.00</span>
+					</li>
+
+					<li class="mui-row mui-clearfix">
+						<label class="mui-pull-left" for="">运费:</label>
+						<span class="mui-pull-right text-danger">80.00</span>
+
+					</li>
+				</ul>
+
+				<div class="cont-je mui-clearfix ">
+					<div class=" mui-pull-right">
+						<label class="mui-pull-left" for="">实付金额：</label>
+						<span class="iconfont icon-renminbi text-danger"></span>
+						<span class="mui-pull-right text-danger">2660.00</span>
+					</div>
+				</div>
+			</div>
+
+			<!--删除订单-->
+			<div class="conforder-item conforder-item-del">
+				<input class="btn " type="button" name="" id="" value="提交订单" />
+			</div>
+
+			<!--弹出modal框-->
+			<div class="conforder-modal" class="v-hide" v-show="isShowModal">
+				
+				<ul class=" mui-clearfix" v-for="item of addressList">
+					<li class=" mui-row" >
+						<div class="mui-col-xs-10 mui-ellipsis-2">
+							<label for="">收货地址:</label>
+							<span class="text-999" v-text="item.addr"></span>
+	
+						</div>
+						<div class="mui-col-xs-2 mui-text-right">
+							<div class="mui-input-row mui-checkbox ">
+								<label></label>
+								<input class="ck" name="Checkbox" type="checkbox"   :checked="item.isCk" v-on:click="itemCk(item,$event)" >
+							</div>
+	
+						</div>
+	
+					</li>
+					<li>
+
+					<p> 
+						<span v-text="item.name"> </span> 
+						<span  v-text="item.phone"></span>
+					</p>
+
+				</li>
+
+				</ul>
+
+			</div>
+
+
+		</section>
+
+		
+
+
+		<script src="js/Home/all.js" type="text/javascript" charset="utf-8"></script>
+
+		<script type="text/javascript" charset="utf-8">
+		
+		new  Vue({
+			el:".conforder",
+			data:{
+				
+				isShowModal:false,
+				addressList:[
+					{
+						addr:"广东省深圳市福田区七巷128号1 a",
+						name:"刘小姐1",
+						phone:"13822225555",
+						isCk:true
+					},
+					{
+						addr:"广东省深圳市福田区七巷128号2",
+						name:"刘小姐2",
+						phone:"13822225556",
+						isCk:false
+					},
+					{
+						addr:"广东省深圳市福田区七巷128号3",
+						name:"刘小姐3",
+						phone:"13822225557",
+						isCk:false
+					}
+				]
+			},
+			
+			methods:{
+				//显示地址列表
+				addressChange(){
+					this.isShowModal=true;
+				},
+				//点击择中
+				itemCk(item,obj){
+					
+					this.isShowModal=false;
+					for (var i in this.addressList){
+						var m=this.addressList[i]
+						if(m==item){
+							m.isCk=true;
+							
+						}else{m.isCk=false;}	
+						
+						
+					}
+					
+					
+				
+				}
+				
+			}
+		});
+		</script>
+	</body>
+
+</html>

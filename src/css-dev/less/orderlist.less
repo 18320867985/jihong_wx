@@ -1,0 +1,145 @@
+
+
+/****订单列表*****/
+
+.orderlist-head {
+    height: 107px;
+    padding-top: 5px;
+    ~ .mui-content{
+       padding-top: 107px;
+    }
+    .mui-scroll-wrapper{
+        border-top:1px solid @text-ash-2;
+    }
+    .txt {
+        margin-left: 5px;
+        width: 88%;
+        input[type='search'] {
+            float: left;
+            width: 86.5%;
+            font-size: 14px;
+             height: 30px;
+            line-height: 30px;
+        }
+        button {
+            height:30px;
+            line-height: 30px;
+            margin: 7px 0 0 5px;
+            padding: 0;
+            font-size: 14px;
+            border: none;
+            background: none;
+            
+            &:active{
+              color: @text-danger;  
+            }
+        }
+    }
+}
+
+//订单列表项
+
+.orderlist-item{
+    margin-top:10px ;
+    padding: 20px;
+    background: @text-white;
+  
+}
+
+//订单列表详情
+ul.orderlist-item-dtl{
+    padding: 20px 0 ;
+    border-top: 1px solid @text-ash-2 ;
+    border-bottom: 1px solid @text-ash-2 ;
+    
+    li{
+        //图标
+        .icon-renminbi{
+            margin: 0 -5px;
+        }
+        
+        //按钮
+        .btn-w{
+            .create-btn(@text-warning);
+            border-radius: 0;
+        }
+        .btn-d{
+            margin-left:3px;
+           .create-btn();  
+            border-radius: 0;
+        }
+        
+    }
+    li+li{
+        margin-top:10px;
+    }
+}
+
+ //订单列表详情@media(min-width:400px)
+
+@media(min-width:400px){
+    
+
+ul.orderlist-item-dtl{
+   
+    
+    li{
+        //图标
+        .icon-renminbi{
+            margin: 0 -3px;
+        }
+        
+        //按钮
+        .btn-w{
+            .create-btn(@text-warning);
+            border-radius: 0;
+        }
+        .btn-d{
+            margin-left:10px;
+           .create-btn();  
+            border-radius: 0;
+        }
+        
+    }
+    li+li{
+        margin-top:10px;
+    }
+}
+  
+}
+
+
+//订单图片
+.orderlist-item-img{
+  
+  padding-top: 10px;
+  
+    img{
+        float: left;
+        height: 120px;
+        width: 120px;
+        margin-right: 10px;
+    }
+    
+    ul{
+        padding: 0;
+        margin: 0;
+        li{
+            h4.mui-ellipsis-2{
+                margin-top: 5px;
+                height: 48px;
+                line-height: 24px;  
+                color:@text-777; 
+                
+                font-size: 16px;
+            } 
+            
+            span{    font-size: 16px; }  
+       &+li{
+           margin-top: 30px;
+       }
+    }
+    
+    
+    }
+}

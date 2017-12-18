@@ -1,0 +1,178 @@
+
+/******购物车*****/
+.shopcar{
+  
+}
+.shopcar-item{
+    margin-top: 10px;
+        padding:  10px;
+           
+        //选择的样式
+       .mui-radio.mui-left input[type='radio'],
+       .mui-checkbox.mui-left input[type='checkbox'] {
+        left: 0px;
+        }
+     
+        .mui-radio input[type='radio']:checked:before, 
+        .mui-checkbox input[type='checkbox']:checked:before {
+            
+        color: @text-danger;
+    }
+}
+
+//项ttl
+.shopcar-item-ttl{
+         position: relative;
+        //checkbox
+        .mui-input-row.mui-checkbox{
+            margin: 0 !important;
+            padding-left: 0 !important;
+           border-bottom: 1px solid @text-ash-3;
+        }
+        
+        label{
+            position: relative;
+            left: -25px;
+           padding-left: 0;
+            margin-left: 0px;
+        }
+        
+        
+}
+
+//项的内容
+.shopcar-item-cont{
+    
+    margin-top: 10px;
+    
+    @shopcar-item-cont-height:150px;
+    
+     font-size:14px ;
+     
+    //checkbox ttl
+    .ttl{
+        position: relative;
+        display: block;
+        float: left;
+     
+        height: @shopcar-item-cont-height;
+      
+        text-align: center;
+      
+         .mui-checkbox{
+             position: relative;
+             top:@shopcar-item-cont-height/2-28;
+         }
+    }
+    .iconfont{
+        margin-right: -3px;
+        font-size: 14px;
+        }
+    //图片
+    .img{
+        display: block;
+        float: left;
+        padding-left: 5px;
+        //width: 100px;
+        height: @shopcar-item-cont-height;
+        
+      }
+    
+    //列表ul
+    .list{
+        display: block;
+        float: right;
+        margin: 0;
+      padding: 0 8px;
+//       width: 150px;
+         font-size:12px ;
+        h4
+        {
+            
+            height: 40px;
+         
+            line-height: 20px;
+            font-size:14px ;
+            color:@text-777;
+            font-weight: 200;
+        }
+     
+     .number{
+        .create-num();
+         
+     }
+     
+     .mui-row+.mui-row{
+         margin-top: 3px;
+     }
+     .nums.mui-row{
+         margin-top: 10px !important; 
+     }
+    }
+}
+
+
+//页脚
+
+.shopcar-footer {
+    
+    padding: 0;
+    height: 50px;
+    line-height: 50px;
+    background: #fff;
+    //checkbox
+    .mui-checkbox{
+        padding: 0;
+        text-align: left;
+         label{
+            position: relative;
+            left:50px;
+           padding-left: 0;
+            margin-left: 0px;
+        }
+    }
+    .mui-checkbox input[type='checkbox']{
+
+      padding: 7px 0;
+      margin: 0;
+     
+      &:checked:before {
+         
+        color: @text-danger;
+        
+     }
+     
+     
+    }
+    //总计
+   .zj{
+      text-align: center;
+      font-size: 14px;
+       
+   }
+    
+    //按钮
+    .btns{
+         position: relative;
+        height: 50px;
+          line-height: 50px;
+        
+        .btn-d{
+           .create-btn(@text-danger,100%,100%); 
+              float:left;
+              line-height: 50px !important;
+        }
+    }
+    
+    .footer-1{
+        width: 25%;
+    }
+  
+   .footer-2{
+        width: 45%;
+    }
+    .footer-3{
+        width: 30%;
+    }
+  
+}

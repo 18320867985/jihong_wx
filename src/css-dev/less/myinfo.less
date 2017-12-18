@@ -1,0 +1,166 @@
+
+/*我的信息*/
+.myinfo{
+    
+    
+}
+
+//我的图片
+.myinfo-img{
+    
+    position: relative;
+    padding: 0 !important;
+        .img-lg{
+        width: 100%;
+        margin: 0 !important;
+    
+        max-height: 250px;
+        min-height: 200px;
+    }
+    
+}
+
+.myinfo-img-cont{
+    
+    position: absolute;
+    top:20%;
+    left: 50%;
+    margin-left: -100px;
+   
+    z-index: 888;
+    
+    width: 200px;
+    height: 140px;
+     text-align: center;  
+    //我的头像
+    .my-pt{
+        
+        display: inline-block;
+        float: none;
+        width: 80px;
+        height:80px;
+        border-radius: 50%;
+        border: none;
+        
+        }
+        
+        //我的名称
+        h4{
+          text-align: center;  
+           color:@text-777; 
+        }
+    
+    
+}
+
+
+
+.myinfo-item{
+      margin-top: -5px;
+      padding: 0 10px;
+      background: #fff;
+    .mui-table-view{
+        margin: 0;
+        border: none !important;
+    }
+    
+   .mui-pull-left,
+   .mui-pull-right
+   {
+       padding: 5px 0;
+       span{
+           vertical-align: middle;
+       }
+   }
+    
+    
+    //审核
+    .myinfo-order-hw{
+        
+        padding: 15px 0 10px 0;
+        
+        
+        .iconfont{
+        font-size: 28px;
+         color:@text-777;
+        } 
+        
+        
+        //h4
+        h4 {
+            margin: 10px;
+            font-size:14px;
+            font-weight: 200;
+           
+        }
+    }
+   
+   //横线
+   li+li{
+       border-top:1px solid @text-ash-2;
+   }
+   
+   ul{
+       padding: 0;
+       
+       li{
+           padding: 10px  5px;
+       }
+   }
+   
+   //图标
+   //定制
+   .iconfont{  margin-right: 3px;   font-size: 24px;
+   margin-left: 0px;}
+   .icon-dingdan{
+       color:rgb(149,88,218);
+       font-size: 18px;
+   }
+   
+   .iconfont.icon-paging-r{
+       font-size: 14px;
+   }
+   
+   //商品图标
+   .icon-shangpinguanli{
+       color: #F862D7;
+   }
+
+   
+   
+}
+
+//我的订单
+
+.myinfo-order{
+    //图标
+    .icon-wodedingdan{
+     
+       color:rgb(63,175,235) ;
+    }
+}
+
+//相连每一项
+.myinfo-item+.myinfo-item{
+    margin-top: 10px;
+}
+
+//对阵单
+
+.myinfo-order-dzd {
+    
+    h4{  
+        
+        font-size: 14px ;
+        font-weight: 200;
+        color:@text-777;
+    }
+}
+
+
+//退出
+
+.myinfo-out{
+    padding:  10px;
+    
+}
