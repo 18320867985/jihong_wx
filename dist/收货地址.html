@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="Keywords" content="" />
+		<meta name="Description" content="" />
+		<title>收货地址</title>
+		<link rel="stylesheet" type="text/css" href="Content/Home/cstfont/iconfont.css" />
+		<link rel="stylesheet" href="Content/Home/all.css" />
+	</head>
+
+
+	<body class="">
+		<!--头部-->
+		<header class=" mui-bar mui-bar-nav bg-white">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left text-base"></a>
+			<h1 class="mui-title">收货地址</h1>
+			<!--<span class="rwinfo-head-send mui-pull-right mui-icon mui-icon-plusempty " style="font-size: 28px;"></span>-->
+		</header>
+
+		<!-- 底部添加地址-->
+		<div class="address-btn">
+			<a class="btn" href="javascript:;">添加地址</a>
+		</div>
+
+		<!--主体内容-->
+		<section class=" mui-content">
+
+			<div class="address">
+				<ul>
+					<li class="mui-ellipsis">
+						<span class="">广东省深圳市福田区文明街128号</span>
+
+					</li>
+					<li class="tel">
+						<span>刘小姐</span>
+						<span>138****2580</span>
+					</li>
+					<li class="address-df mui-text-right">
+						<a class="btn-addr active" href="javascript:;"> 默认地址</a>
+					</li>
+				</ul>
+				<span class="iconfont icon-bianji"></span>
+
+			</div>
+
+			<div class="address">
+				<ul>
+					<li class="mui-ellipsis">
+						<span class="">广东省深圳市福田区文明街128号</span>
+
+					</li>
+					<li class="tel">
+						<span>刘小姐</span>
+						<span>138****2580</span>
+					</li>
+
+					<li class="address-df mui-text-right">
+						<a class="btn-addr" href="javascript:;"> 设置默认</a>
+					</li>
+				</ul>
+				<span class="iconfont icon-bianji"></span>
+
+			</div>
+
+			<div class="address">
+				<ul>
+					<li class="mui-ellipsis">
+						<span class="">广东省深圳市福田区文明街128号</span>
+
+					</li>
+					<li class="tel">
+						<span>刘小姐</span>
+						<span>138****2580</span>
+					</li>
+
+					<li class="address-df mui-text-right">
+						<a class="btn-addr" href="javascript:;"> 设置默认</a>
+					</li>
+				</ul>
+				<span class="iconfont icon-bianji"></span>
+
+			</div>
+
+			<div class="address">
+				<ul>
+					<li class="mui-ellipsis">
+						<span class="">广东省深圳市福田区文明街128号</span>
+
+					</li>
+					<li class="tel">
+						<span>刘小姐</span>
+						<span>138****2580</span>
+					</li>
+
+					<li class="address-df mui-text-right">
+						<a class="btn-addr" href="javascript:;"> 设置默认</a>
+					</li>
+				</ul>
+				<span class="iconfont icon-bianji"></span>
+
+			</div>
+
+			<div class="address">
+				<ul>
+					<li class="mui-ellipsis">
+						<span class="">广东省深圳市福田区文明街128号</span>
+
+					</li>
+					<li class="tel">
+						<span>刘小姐</span>
+						<span>138****2580</span>
+					</li>
+
+					<li class="address-df mui-text-right">
+						<a class="btn-addr" href="javascript:;"> 设置默认</a>
+					</li>
+				</ul>
+				<span class="iconfont icon-bianji"></span>
+
+			</div>
+
+		</section>
+
+		<script src="js/Home/all.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			$(".address-df .btn-addr").click(function() {
+
+				if($(this).attr("class").toString().indexOf("active") <= 0) {
+
+					compt.confirm("设置为默认地址", function() {
+						// 确认执行函数
+
+					})
+				}
+
+			})
+		</script>
+	</body>
+
+</html>

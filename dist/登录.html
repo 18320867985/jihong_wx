@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="Keywords" content="" />
+		<meta name="Description" content="" />
+		<title>登录</title>
+		<link rel="stylesheet" type="text/css" href="Content/Home/cstfont/iconfont.css" />
+		<link rel="stylesheet" href="Content/Home/all.css" />
+	</head>
+
+	<style type="text/css">
+
+	</style>
+
+	<body>
+		<!--头部-->
+		<header class="mui-bar mui-bar-nav bg-white">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left text-base"></a>
+			<h1 class="mui-title">登录</h1>
+		</header>
+
+		<!--主体内容-->
+		<section class=" mui-content">
+			<div class="login">
+				<!--ttl-->
+				<div class="login-ttl mui-row">
+
+					<div class="mui-col-xs-6 mui-active" data-val="0">
+						<h5 class="mui-text-center ">经销商</h5>
+					</div>
+					<div class="mui-col-xs-6"  data-val="1">
+						<h5 class="mui-text-center">供应商</h5>
+					</div>
+				</div>
+				<!--input-->
+				<div class=" login-form">
+
+					<div class="mui-row mui-clearfix">
+						<label class=" text-center" for="" data-text="登录名">
+							<span class="iconfont icon-ren-copy"></span>
+						</label>
+						<div class="input-box">
+							<input type="text" name="" id="" value="" maxlength="11" placeholder="输入手机号码" />
+						</div>
+
+					</div>
+					<div class="mui-row mui-clearfix">
+						<label class=" text-center" for=""  data-text="密码">
+							<span class="iconfont icon-mima1"></span>
+						</label>
+						<div class="input-box">
+							<input class="mui-input-password" type="password"  name="" id="" value="" maxlength="11" placeholder="输入密码" />
+						</div>
+
+					</div>
+
+				</div>
+				<!--btns-->
+				<div class="login-btn ">
+					<button class="mui-btn " type="button" disabled="disabled" >确认</button>
+				</div>
+
+				<div class="login-findpwd">
+					<a class="mui-pull-left " href="javascript:; ">快速注册</a>
+					<a class="mui-pull-right " href="javascript:; ">忘记密码</a>
+				</div>
+
+			</div>
+
+		</section>
+
+		<script src="js/Home/all.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			//当前页js初始化
+			login.init();
+		
+				
+				//提交数据
+				$(".login-btn .mui-btn").on("tap",function(){
+						alert("ajax")			
+				});
+				
+
+		</script>
+	</body>
+
+</html>

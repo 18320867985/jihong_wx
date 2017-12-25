@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="Keywords" content="" />
+		<meta name="Description" content="" />
+		<title>购物车</title>
+		<link rel="stylesheet" type="text/css" href="Content/Home/cstfont/iconfont.css" />
+		<link rel="stylesheet" href="Content/Home/all.css" />
+	</head>
+
+
+	<body>
+		<!--头部-->
+		<header class="mui-bar mui-bar-nav bg-white">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left text-base"></a>
+			<h1 class="mui-title">购物车</h1>
+		</header>
+
+		<!-- 底部--->
+		<nav class="shopcar-footer mui-bar mui-bar-tab">
+			<div class="mui-row mui-clearfix">
+				<div class=" mui-col-xs-4 mui-row footer-1">
+					<div class="mui-input-row mui-checkbox mui-left all-check ">
+						<label  for="Item1">全选</label>
+						<input name="checkbox1" value="Item 1" type="checkbox" id="Item1" >
+					</div>
+				</div>
+				<div class="zj mui-col-xs-4 mui-row  footer-2">
+					<label for="">总计:</label>
+					<span class="text-danger">1688.8</span>
+					<span>
+							共(
+							<span class="text-danger">8</span> )件
+					</span>
+				</div>
+
+				<div class="mui-col-xs-4 btns footer-3">
+
+					<a class="btn btn-d" href="javascript:;">立即购买</a>
+				</div>
+
+			</div>
+		</nav>
+
+		<!--主体内容-->
+		<section class="shopcar mui-content">
+
+			<!--item-->
+			<div class="shopcar-item mui-section">
+				<!--项-头部checkbox-->
+				<!--<div class="shopcar-item-ttl mui-clearfix">
+					<div class="mui-input-row mui-checkbox mui-left ">
+						<label for="Item1">玫瑰之约</label>
+						<input name="checkbox1" value="Item 1" type="checkbox" id="Item1" checked>
+					</div>
+				</div>-->
+
+				<!--项的每个小item-->
+				<div class="shopcar-item-cont mui-clearfix mui-row">
+
+					<!--checkbox-->
+					<div class="ttl mui-col-xs-1">
+						<div class=" mui-checkbox mui-left  mui-clearfix">
+							<input name="checkbox1" value="Item 1" type="checkbox" id="Item1" checked>
+						</div>
+					</div>
+
+					<img class="img mui-col-xs-4" src="images/Home/编辑精选.png" alt="购物车图片" />
+
+					<ul class="list mui-col-xs-7">
+
+						<h4 class="mui-ellipsis-2">发财树办公家庭创意盆栽自动吸水净化空气</h4>
+
+						<li class="mui-row">
+							<div class="mui-col-xs-6 ">
+								<label for="">箱数:</label>
+								<span>20</span>
+
+							</div>
+							<div class="mui-col-xs-6 ">
+								<label for="">型号:</label>
+								<span>A级</span>
+							</div>
+						</li>
+
+						<li class="mui-row mui-clearfix">
+							<div class="mui-col-xs-6">
+								<label for="">等级:</label>
+								<span>80#</span>
+
+							</div>
+							<div class="mui-col-xs-6">
+								<label for="">供应商:</label>
+								<span>广东XX有限公司</span>
+							</div>
+						</li>
+
+						<li class="nums mui-row mui-clearfix">
+							<div class="mui-col-xs-6">
+								<span class="iconfont icon-renminbi text-danger"></span>
+								<span>27.80</span>
+								<span>/件</span>
+
+							</div>
+							<div class="mui-col-xs-6">
+								<div class="number" >
+									<button class="minus btn" type="button">-</button>
+									<input class="num" type="number" value="1"  data-min="1"/>
+									<button class="plus btn" type="button">+</button>
+								</div>
+							</div>
+
+						</li>
+
+					</ul>
+
+				</div>
+
+				<!--项的每个小item-->
+				<div class="shopcar-item-cont mui-clearfix mui-row">
+
+					<!--checkbox-->
+					<div class="ttl mui-col-xs-1">
+						<div class=" mui-checkbox mui-left  mui-clearfix">
+							<input name="checkbox1" value="Item 1" type="checkbox" id="Item1" checked>
+						</div>
+					</div>
+
+					<img class="img mui-col-xs-4" src="images/Home/编辑精选.png" alt="购物车图片" />
+
+					<ul class="list mui-col-xs-7">
+
+						<h4 class="mui-ellipsis-2">发财树办公家庭创意盆栽自动吸水净化空气</h4>
+
+						<li class="mui-row">
+							<div class="mui-col-xs-6 ">
+								<label for="">箱数:</label>
+								<span>20</span>
+
+							</div>
+							<div class="mui-col-xs-6 ">
+								<label for="">型号:</label>
+								<span>A级</span>
+							</div>
+						</li>
+
+						<li class="mui-row mui-clearfix">
+							<div class="mui-col-xs-6">
+								<label for="">等级:</label>
+								<span>80#</span>
+
+							</div>
+							<div class="mui-col-xs-6">
+								<label for="">供应商:</label>
+								<span>广东XX有限公司</span>
+							</div>
+						</li>
+
+						<li class="nums mui-row mui-clearfix">
+							<div class="mui-col-xs-6">
+								<span class="iconfont icon-renminbi text-danger"></span>
+								<span>27.80</span>
+								<span>/件</span>
+
+							</div>
+							<div class="mui-col-xs-6">
+								<div class="number">
+									<button class="minus btn" type="button" data-min="1">-</button>
+									<input class="num" type="number" value="1" />
+									<button class="plus btn" type="button">+</button>
+								</div>
+							</div>
+
+						</li>
+
+					</ul>
+
+				</div>
+
+				<!--项的每个小item-->
+				<div class="shopcar-item-cont mui-clearfix mui-row">
+
+					<!--checkbox-->
+					<div class="ttl mui-col-xs-1">
+						<div class=" mui-checkbox mui-left  mui-clearfix">
+							<input name="checkbox1" value="Item 1" type="checkbox" id="Item1" >
+						</div>
+					</div>
+
+					<img class="img mui-col-xs-4" src="images/Home/编辑精选.png" alt="购物车图片" />
+
+					<ul class="list mui-col-xs-7">
+
+						<h4 class="mui-ellipsis-2">发财树办公家庭创意盆栽自动吸水净化空气</h4>
+
+						<li class="mui-row">
+							<div class="mui-col-xs-6 ">
+								<label for="">箱数:</label>
+								<span>20</span>
+
+							</div>
+							<div class="mui-col-xs-6 ">
+								<label for="">型号:</label>
+								<span>A级</span>
+							</div>
+						</li>
+
+						<li class="mui-row mui-clearfix">
+							<div class="mui-col-xs-6">
+								<label for="">等级:</label>
+								<span>80#</span>
+
+							</div>
+							<div class="mui-col-xs-6">
+								<label for="">供应商:</label>
+								<span>广东XX有限公司</span>
+							</div>
+						</li>
+
+						<li class="nums mui-row mui-clearfix">
+							<div class="mui-col-xs-6">
+								<span class="iconfont icon-renminbi text-danger"></span>
+								<span>27.80</span>
+								<span>/件</span>
+
+							</div>
+							<div class="mui-col-xs-6">
+								<div class="number">
+									<button class="minus btn" type="button">-</button>
+									<input class="num" type="number" value="1" />
+									<button class="plus btn" type="button">+</button>
+								</div>
+							</div>
+
+						</li>
+
+					</ul>
+
+				</div>
+
+				<!--项的每个小item-->
+				<div class="shopcar-item-cont mui-clearfix mui-row">
+
+					<!--checkbox-->
+					<div class="ttl mui-col-xs-1">
+						<div class=" mui-checkbox mui-left  mui-clearfix">
+							<input name="checkbox1" value="Item 1" type="checkbox" id="Item1" >
+						</div>
+					</div>
+
+					<img class="img mui-col-xs-4" src="images/Home/编辑精选.png" alt="购物车图片" />
+
+					<ul class="list mui-col-xs-7">
+
+						<h4 class="mui-ellipsis-2">发财树办公家庭创意盆栽自动吸水净化空气</h4>
+
+						<li class="mui-row">
+							<div class="mui-col-xs-6 ">
+								<label for="">箱数:</label>
+								<span>20</span>
+
+							</div>
+							<div class="mui-col-xs-6 ">
+								<label for="">型号:</label>
+								<span>A级</span>
+							</div>
+						</li>
+
+						<li class="mui-row mui-clearfix">
+							<div class="mui-col-xs-6">
+								<label for="">等级:</label>
+								<span>80#</span>
+
+							</div>
+							<div class="mui-col-xs-6">
+								<label for="">供应商:</label>
+								<span>广东XX有限公司</span>
+							</div>
+						</li>
+
+						<li class="nums mui-row mui-clearfix">
+							<div class="mui-col-xs-6">
+								<span class="iconfont icon-renminbi text-danger"></span>
+								<span>27.80</span>
+								<span>/件</span>
+
+							</div>
+							<div class="mui-col-xs-6">
+								<div class="number">
+									<button class="minus btn" type="button">-</button>
+									<input class="num" type="number" value="1" />
+									<button class="plus btn" type="button">+</button>
+								</div>
+							</div>
+
+						</li>
+
+					</ul>
+
+				</div>
+
+				<!--项的每个小item-->
+				<div class="shopcar-item-cont mui-clearfix mui-row">
+
+					<!--checkbox-->
+					<div class="ttl mui-col-xs-1">
+						<div class=" mui-checkbox mui-left  mui-clearfix">
+							<input name="checkbox1" value="Item 1" type="checkbox" id="Item1" >
+						</div>
+					</div>
+
+					<img class="img mui-col-xs-4" src="images/Home/编辑精选.png" alt="购物车图片" />
+
+					<ul class="list mui-col-xs-7">
+
+						<h4 class="mui-ellipsis-2">发财树办公家庭创意盆栽自动吸水净化空气</h4>
+
+						<li class="mui-row">
+							<div class="mui-col-xs-6 ">
+								<label for="">箱数:</label>
+								<span>20</span>
+
+							</div>
+							<div class="mui-col-xs-6 ">
+								<label for="">型号:</label>
+								<span>A级</span>
+							</div>
+						</li>
+
+						<li class="mui-row mui-clearfix">
+							<div class="mui-col-xs-6">
+								<label for="">等级:</label>
+								<span>80#</span>
+
+							</div>
+							<div class="mui-col-xs-6">
+								<label for="">供应商:</label>
+								<span>广东XX有限公司</span>
+							</div>
+						</li>
+
+						<li class="nums mui-row mui-clearfix">
+							<div class="mui-col-xs-6">
+								<span class="iconfont icon-renminbi text-danger"></span>
+								<span>27.80</span>
+								<span>/件</span>
+
+							</div>
+							<div class="mui-col-xs-6">
+								<div class="number">
+									<button class="minus btn" type="button">-</button>
+									<input class="num" type="number" value="1" />
+									<button class="plus btn" type="button">+</button>
+								</div>
+							</div>
+
+						</li>
+
+					</ul>
+
+				</div>
+
+				<!--项的每个小item-->
+				<div class="shopcar-item-cont mui-clearfix mui-row">
+
+					<!--checkbox-->
+					<div class="ttl mui-col-xs-1">
+						<div class=" mui-checkbox mui-left  mui-clearfix">
+							<input name="checkbox1" value="Item 1" type="checkbox" id="Item1" checked>
+						</div>
+					</div>
+
+					<img class="img mui-col-xs-4" src="images/Home/编辑精选.png" alt="购物车图片" />
+
+					<ul class="list mui-col-xs-7">
+
+						<h4 class="mui-ellipsis-2">发财树办公家庭创意盆栽自动吸水净化空气</h4>
+
+						<li class="mui-row">
+							<div class="mui-col-xs-6 ">
+								<label for="">箱数:</label>
+								<span>20</span>
+
+							</div>
+							<div class="mui-col-xs-6 ">
+								<label for="">型号:</label>
+								<span>A级</span>
+							</div>
+						</li>
+
+						<li class="mui-row mui-clearfix">
+							<div class="mui-col-xs-6">
+								<label for="">等级:</label>
+								<span>80#</span>
+
+							</div>
+							<div class="mui-col-xs-6">
+								<label for="">供应商:</label>
+								<span>广东XX有限公司</span>
+							</div>
+						</li>
+
+						<li class="nums mui-row mui-clearfix">
+							<div class="mui-col-xs-6">
+								<span class="iconfont icon-renminbi text-danger"></span>
+								<span>27.80</span>
+								<span>/件</span>
+
+							</div>
+							<div class="mui-col-xs-6">
+								<div class="number" data-min="1">
+									<button class="minus btn" type="button">-</button>
+									<input class="num" type="number" value="1" />
+									<button class="plus btn" type="button">+</button>
+								</div>
+							</div>
+
+						</li>
+
+					</ul>
+
+				</div>
+
+			</div>
+
+		</section>
+
+		<!--js-->
+		<script src="js/Home/all.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			
+			(function($){
+				
+				
+			
+			//数字框点击事件
+			$(".shopcar-item").on("number_click",function(event,element){
+				
+				//element 当前点击的元素	
+				var p=$(element).parents(".number");
+				
+				//alert($(p).find(".num").val());
+					
+			});
+			
+			var bl="true";
+			$(".all-check").on("tap",function(){
+				
+			if(bl){
+			
+				$(".shopcar-item-cont input[type='checkbox']").attr("checked","checked");
+					
+			
+			bl=!bl;
+				
+			}else{
+		
+				$(".shopcar-item-cont input[type='checkbox']").removeAttr("checked");
+				
+				
+			bl=!bl;
+			}
+		
+				
+			});
+		
+		})(window.Zepto)	
+		</script>
+	</body>
+
+</html>

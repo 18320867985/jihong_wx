@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="Keywords" content="" />
+		<meta name="Description" content="" />
+		<title>投诉编辑</title>
+		<link rel="stylesheet" type="text/css" href="Content/Home/cstfont/iconfont.css" />
+		<link rel="stylesheet" href="Content/Home/all.css" />
+	</head>
+
+	
+	<body class="">
+		<!--头部-->
+		<header class="rwinfo-head mui-bar mui-bar-nav bg-white">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left text-base"></a>
+			<h1 class="mui-title">投诉编辑</h1>
+			<span class="rwinfo-head-send mui-pull-right">提交</span>
+		</header>
+
+		<!--主体内容-->
+		<section class="touosu mui-content">
+			<div class="tousu-item">
+				<ul >
+					<li>
+						<h4>你的投诉原因(必填)</h4>
+						
+						<textarea  placeholder="输入投诉原因"></textarea>
+					</li>
+				</ul>
+			</div>
+			
+			<div class="tousu-item tousu-item-file">
+				<ul >
+					<li class="mui-clearfix">
+						<h4 class="mui-pull-left">相关证明(选填)</h4>
+						<a class="mui-pull-right text-777" href="#sheet">继续添加</a>
+					</li>
+					<!--上传图片-->
+					<li class="mui-row mui-clearfix">
+						
+						<div  class="mui-col-xs-6">
+							
+							<div class="img-box">
+								<a href="#sheet">
+									<span class="mui-icon mui-icon-plusempty"></span>
+								</a>
+								
+							</div>
+						</div>	
+						
+						<div  class="mui-col-xs-6 img-box">
+							<div class="img-box">
+								<a href="#sheet">
+									<span class="mui-icon mui-icon-plusempty"></span>
+								</a>
+							</div>
+						</div>	
+					</li>
+						
+					<li class="ts">
+						<p>温馨提示：为了审核通过,请上传真实证明信息，支持jpg,jpeg,png	</p>
+					</li>
+					
+				</ul>
+			</div>
+		
+			<!-- 下面弹出框-->
+			<div id="sheet" class="mui-popover mui-popover-bottom mui-popover-action ">
+			    <!-- 可选择菜单 -->
+			    <ul class="mui-table-view">
+			      <li class="mui-table-view-cell">
+			        <a href="#">拍照</a>
+			      </li>
+			      <li class="mui-table-view-cell">
+			        <a href="#">从相机选择</a>
+			      </li>
+			    </ul>
+			    <!-- 取消菜单 -->
+			    <ul class="mui-table-view">
+			      <li class="mui-table-view-cell">
+			        <a href="#sheet"><b>取消</b></a>
+			      </li>
+			    </ul>
+			</div>
+		
+			
+		
+		</section>
+
+		<script src="js/Home/all.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			//compt.alert("图片上传成功");
+			
+			compt.alert("请输入投诉原因！");
+		</script>
+	</body>
+
+</html>

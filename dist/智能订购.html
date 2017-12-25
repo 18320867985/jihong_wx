@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="Keywords" content="" />
+		<meta name="Description" content="" />
+		<title>资材订购</title>
+		<link rel="stylesheet" type="text/css" href="Content/Home/cstfont/iconfont.css" />
+		<link rel="stylesheet" href="Content/Home/all.css" />
+		<style type="text/css">
+
+		</style>
+	</head>
+
+	<body >
+		<!--头部-->
+		<header class="dinghuo-head mui-bar mui-bar-nav mui-clearfix bg-white">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left text-base "></a>
+			<div class="txt mui-pull-left">
+				<input class="mui-pull-left" type="search" name="" id="" value="" placeholder="输入订单号/商品名称" />
+				<button class="mui-pull-left" type="button"> 查询</button>
+			</div>
+			<div class="mui-clearfix"></div>
+
+			</div>
+		</header>
+
+		<!--主体内容-->
+		<section class="zhineng mui-content">
+
+			<!-- 最近订单-->
+			<div class="zhineng-ttl comp-checkbox mui-clearfix">
+				<div class="comp-checkbox-item radio-box">
+					<input name="Checkbox" type="radio" id="inpu_1" name="radio-name">
+					<label for="inpu_1">最近一笔订单</label>
+
+				</div>
+				<div class="comp-checkbox-item  radio-box">
+					<input name="Checkbox" type="radio" id="inpu_2" name="radio-name">
+					<label for="inpu_2">近半个月订单</label>
+
+				</div>
+
+				<div class="comp-checkbox-item  radio-box">
+				<input name="Checkbox" type="radio" id="inpu_3" name="radio-name">
+			    <label for="inpu_3">近一个月订单</label>
+			
+			</div>
+			</div>
+
+			<!--item-->
+			<div class="zhineng-item">
+				<ul>
+
+					<li class="mui-row mui-clearfix">
+						<div class="mui-col-xs-6 mui-ellipsis">
+							<label for="">商品名称:</label>
+							<span>发财树</span>
+
+						</div>
+						<div class="mui-col-xs-6 mui-ellipsis">
+							<label for="">箱数:</label>
+							<!--<span class="iconfont  icon-renminbi text-danger " style="margin-right: -5px; vertical-align: middle;"></span>-->
+							<span>20</span>
+
+						</div>
+
+					</li>
+
+					<li class="mui-row mui-clearfix">
+						<div class="mui-col-xs-6 mui-ellipsis">
+							<label for="">规格:</label>
+							<span>A</span>
+
+						</div>
+						<div class="mui-col-xs-6 mui-ellipsis">
+							<div class="number-box mui-clearfix">
+								<label for="">订购数量：</label>
+								<div class="number">
+									<button class="minus btn" type="button">-</button>
+									<input class="num" type="number" value="1" data-min="1" />
+									<button class="plus btn" type="button">+</button>
+								</div>
+
+							</div>
+
+					</li>
+					<li class="mui-row mui-clearfix">
+						<div class="mui-col-xs-6 mui-ellipsis">
+							<label for="">型号:</label>
+							<span>A1</span>
+
+						</div>
+						<div class="mui-col-xs-6 mui-ellipsis">
+							<label for="">单价:</label>
+							<span class="iconfont  icon-renminbi text-danger " style="margin-right: -5px; vertical-align: middle;"></span>
+							<span>20</span>
+
+						</div>
+
+					</li>
+
+					<li class="mui-row mui-clearfix">
+						<div class="mui-col-xs-6 mui-ellipsis">
+							<label for="">供应商:</label>
+							<span>XXXXXX</span>
+
+						</div>
+						<div class="mui-col-xs-6 mui-ellipsis">
+							<label for="">金额:</label>
+							<span class="iconfont  icon-renminbi text-danger " style="margin-right: -5px; vertical-align: middle;"></span>
+							<span>2000.0</span>
+
+						</div>
+
+					</li>
+
+					<li class="mui-row mui-clearfix">
+						<div class="mui-col-xs-6 mui-ellipsis">
+							<label for="">单位：</label>
+							<span>箱</span>
+
+						</div>
+						<div class="mui-col-xs-6 mui-ellipsis op">
+							<label for="">操作:</label>
+							<a class="text-susess" href="javascript:;"> 立即下单</a>
+							<span class="fgf">|</span>
+							<a class="text-susess" href="javascript:;"> 删除订单</a>
+
+						</div>
+
+					</li>
+
+					<li class="mui-row mui-clearfix">
+						<div class="mui-col-xs-6 mui-ellipsis">
+							<label for="">装箱数量:</label>
+							<span>20</span>
+
+						</div>
+						<div class="mui-col-xs-6 mui-ellipsis">
+							<label for="">备注:</label>
+
+							<span>xxxxxxxxxx</span>
+
+						</div>
+
+					</li>
+
+				</ul>
+				</div>
+
+			<!--item-->
+			<div class="zhineng-item">
+					<ul>
+
+						<li class="mui-row mui-clearfix">
+							<div class="mui-col-xs-6 mui-ellipsis">
+								<label for="">商品名称:</label>
+								<span>发财树</span>
+
+							</div>
+							<div class="mui-col-xs-6 mui-ellipsis">
+								<label for="">箱数:</label>
+								<!--<span class="iconfont  icon-renminbi text-danger " style="margin-right: -5px; vertical-align: middle;"></span>-->
+								<span>20</span>
+
+							</div>
+
+						</li>
+
+						<li class="mui-row mui-clearfix">
+							<div class="mui-col-xs-6 mui-ellipsis">
+								<label for="">规格:</label>
+								<span>A</span>
+
+							</div>
+							<div class="mui-col-xs-6 mui-ellipsis">
+								<div class="number-box mui-clearfix">
+									<label for="">订购数量：</label>
+									<div class="number">
+										<button class="minus btn" type="button">-</button>
+										<input class="num" type="number" value="1" data-min="1" />
+										<button class="plus btn" type="button">+</button>
+									</div>
+
+								</div>
+
+						</li>
+						<li class="mui-row mui-clearfix">
+							<div class="mui-col-xs-6 mui-ellipsis">
+								<label for="">型号:</label>
+								<span>A1</span>
+
+							</div>
+							<div class="mui-col-xs-6 mui-ellipsis">
+								<label for="">单价:</label>
+								<span class="iconfont  icon-renminbi text-danger " style="margin-right: -5px; vertical-align: middle;"></span>
+								<span>20</span>
+
+							</div>
+
+						</li>
+
+						<li class="mui-row mui-clearfix">
+							<div class="mui-col-xs-6 mui-ellipsis">
+								<label for="">供应商:</label>
+								<span>XXXXXX</span>
+
+							</div>
+							<div class="mui-col-xs-6 mui-ellipsis">
+								<label for="">金额:</label>
+								<span class="iconfont  icon-renminbi text-danger " style="margin-right: -5px; vertical-align: middle;"></span>
+								<span>2000.0</span>
+
+							</div>
+
+						</li>
+
+						<li class="mui-row mui-clearfix">
+							<div class="mui-col-xs-6 mui-ellipsis">
+								<label for="">单位：</label>
+								<span>箱</span>
+
+							</div>
+							<div class="mui-col-xs-6 mui-ellipsis op">
+								<label for="">操作:</label>
+								<a class="text-susess" href="javascript:;"> 立即下单</a>
+								<span class="fgf">|</span>
+								<a class="text-susess" href="javascript:;"> 删除订单</a>
+
+							</div>
+
+						</li>
+
+						<li class="mui-row mui-clearfix">
+							<div class="mui-col-xs-6 mui-ellipsis">
+								<label for="">装箱数量:</label>
+								<span>20</span>
+
+							</div>
+							<div class="mui-col-xs-6 mui-ellipsis">
+								<label for="">备注:</label>
+
+								<span>xxxxxxxxxx</span>
+
+							</div>
+
+						</li>
+
+					</ul>
+					</div>
+
+			<!--item-->
+			<div class="zhineng-item">
+						<ul>
+
+							<li class="mui-row mui-clearfix">
+								<div class="mui-col-xs-6 mui-ellipsis">
+									<label for="">商品名称:</label>
+									<span>发财树</span>
+
+								</div>
+								<div class="mui-col-xs-6 mui-ellipsis">
+									<label for="">箱数:</label>
+									<!--<span class="iconfont  icon-renminbi text-danger " style="margin-right: -5px; vertical-align: middle;"></span>-->
+									<span>20</span>
+
+								</div>
+
+							</li>
+
+							<li class="mui-row mui-clearfix">
+								<div class="mui-col-xs-6 mui-ellipsis">
+									<label for="">规格:</label>
+									<span>A</span>
+
+								</div>
+								<div class="mui-col-xs-6 mui-ellipsis">
+									<div class="number-box mui-clearfix">
+										<label for="">订购数量：</label>
+										<div class="number">
+											<button class="minus btn" type="button">-</button>
+											<input class="num" type="number" value="1" data-min="1" />
+											<button class="plus btn" type="button">+</button>
+										</div>
+
+									</div>
+
+							</li>
+							<li class="mui-row mui-clearfix">
+								<div class="mui-col-xs-6 mui-ellipsis">
+									<label for="">型号:</label>
+									<span>A1</span>
+
+								</div>
+								<div class="mui-col-xs-6 mui-ellipsis">
+									<label for="">单价:</label>
+									<span class="iconfont  icon-renminbi text-danger " style="margin-right: -5px; vertical-align: middle;"></span>
+									<span>20</span>
+
+								</div>
+
+							</li>
+
+							<li class="mui-row mui-clearfix">
+								<div class="mui-col-xs-6 mui-ellipsis">
+									<label for="">供应商:</label>
+									<span>XXXXXX</span>
+
+								</div>
+								<div class="mui-col-xs-6 mui-ellipsis">
+									<label for="">金额:</label>
+									<span class="iconfont  icon-renminbi text-danger " style="margin-right: -5px; vertical-align: middle;"></span>
+									<span>2000.0</span>
+
+								</div>
+
+							</li>
+
+							<li class="mui-row mui-clearfix">
+								<div class="mui-col-xs-6 mui-ellipsis">
+									<label for="">单位：</label>
+									<span>箱</span>
+
+								</div>
+								<div class="mui-col-xs-6 mui-ellipsis op">
+									<label for="">操作:</label>
+									<a class="text-susess" href="javascript:;"> 立即下单</a>
+									<span class="fgf">|</span>
+									<a class="text-susess" href="javascript:;"> 删除订单</a>
+
+								</div>
+
+							</li>
+
+							<li class="mui-row mui-clearfix">
+								<div class="mui-col-xs-6 mui-ellipsis">
+									<label for="">装箱数量:</label>
+									<span>20</span>
+
+								</div>
+								<div class="mui-col-xs-6 mui-ellipsis">
+									<label for="">备注:</label>
+
+									<span>xxxxxxxxxx</span>
+
+								</div>
+
+							</li>
+
+						</ul>
+						</div>
+
+			<!--item-->
+			<div class="zhineng-item">
+							<ul>
+
+								<li class="mui-row mui-clearfix">
+									<div class="mui-col-xs-6 mui-ellipsis">
+										<label for="">商品名称:</label>
+										<span>发财树</span>
+
+									</div>
+									<div class="mui-col-xs-6 mui-ellipsis">
+										<label for="">箱数:</label>
+										<!--<span class="iconfont  icon-renminbi text-danger " style="margin-right: -5px; vertical-align: middle;"></span>-->
+										<span>20</span>
+
+									</div>
+
+								</li>
+
+								<li class="mui-row mui-clearfix">
+									<div class="mui-col-xs-6 mui-ellipsis">
+										<label for="">规格:</label>
+										<span>A</span>
+
+									</div>
+									<div class="mui-col-xs-6 mui-ellipsis">
+										<div class="number-box mui-clearfix">
+											<label for="">订购数量：</label>
+											<div class="number">
+												<button class="minus btn" type="button">-</button>
+												<input class="num" type="number" value="1" data-min="1" />
+												<button class="plus btn" type="button">+</button>
+											</div>
+
+										</div>
+
+								</li>
+								<li class="mui-row mui-clearfix">
+									<div class="mui-col-xs-6 mui-ellipsis">
+										<label for="">型号:</label>
+										<span>A1</span>
+
+									</div>
+									<div class="mui-col-xs-6 mui-ellipsis">
+										<label for="">单价:</label>
+										<span class="iconfont  icon-renminbi text-danger " style="margin-right: -5px; vertical-align: middle;"></span>
+										<span>20</span>
+
+									</div>
+
+								</li>
+
+								<li class="mui-row mui-clearfix">
+									<div class="mui-col-xs-6 mui-ellipsis">
+										<label for="">供应商:</label>
+										<span>XXXXXX</span>
+
+									</div>
+									<div class="mui-col-xs-6 mui-ellipsis">
+										<label for="">金额:</label>
+										<span class="iconfont  icon-renminbi text-danger " style="margin-right: -5px; vertical-align: middle;"></span>
+										<span>2000.0</span>
+
+									</div>
+
+								</li>
+
+								<li class="mui-row mui-clearfix">
+									<div class="mui-col-xs-6 mui-ellipsis">
+										<label for="">单位：</label>
+										<span>箱</span>
+
+									</div>
+									<div class="mui-col-xs-6 mui-ellipsis op">
+										<label for="">操作:</label>
+										<a class="text-susess" href="javascript:;"> 立即下单</a>
+										<span class="fgf">|</span>
+										<a class="text-susess" href="javascript:;"> 删除订单</a>
+
+									</div>
+
+								</li>
+
+								<li class="mui-row mui-clearfix">
+									<div class="mui-col-xs-6 mui-ellipsis">
+										<label for="">装箱数量:</label>
+										<span>20</span>
+
+									</div>
+									<div class="mui-col-xs-6 mui-ellipsis">
+										<label for="">备注:</label>
+
+										<span>xxxxxxxxxx</span>
+
+									</div>
+
+								</li>
+
+							</ul>
+							</div>
+
+			<!--item-->
+			<div class="zhineng-item">
+								<ul>
+
+									<li class="mui-row mui-clearfix">
+										<div class="mui-col-xs-6 mui-ellipsis">
+											<label for="">商品名称:</label>
+											<span>发财树</span>
+
+										</div>
+										<div class="mui-col-xs-6 mui-ellipsis">
+											<label for="">箱数:</label>
+											<!--<span class="iconfont  icon-renminbi text-danger " style="margin-right: -5px; vertical-align: middle;"></span>-->
+											<span>20</span>
+
+										</div>
+
+									</li>
+
+									<li class="mui-row mui-clearfix">
+										<div class="mui-col-xs-6 mui-ellipsis">
+											<label for="">规格:</label>
+											<span>A</span>
+
+										</div>
+										<div class="mui-col-xs-6 mui-ellipsis">
+											<div class="number-box mui-clearfix">
+												<label for="">订购数量：</label>
+												<div class="number">
+													<button class="minus btn" type="button">-</button>
+													<input class="num" type="number" value="1" data-min="1" />
+													<button class="plus btn" type="button">+</button>
+												</div>
+
+											</div>
+
+									</li>
+									<li class="mui-row mui-clearfix">
+										<div class="mui-col-xs-6 mui-ellipsis">
+											<label for="">型号:</label>
+											<span>A1</span>
+
+										</div>
+										<div class="mui-col-xs-6 mui-ellipsis">
+											<label for="">单价:</label>
+											<span class="iconfont  icon-renminbi text-danger " style="margin-right: -5px; vertical-align: middle;"></span>
+											<span>20</span>
+
+										</div>
+
+									</li>
+
+									<li class="mui-row mui-clearfix">
+										<div class="mui-col-xs-6 mui-ellipsis">
+											<label for="">供应商:</label>
+											<span>XXXXXX</span>
+
+										</div>
+										<div class="mui-col-xs-6 mui-ellipsis">
+											<label for="">金额:</label>
+											<span class="iconfont  icon-renminbi text-danger " style="margin-right: -5px; vertical-align: middle;"></span>
+											<span>2000.0</span>
+
+										</div>
+
+									</li>
+
+									<li class="mui-row mui-clearfix">
+										<div class="mui-col-xs-6 mui-ellipsis">
+											<label for="">单位：</label>
+											<span>箱</span>
+
+										</div>
+										<div class="mui-col-xs-6 mui-ellipsis op">
+											<label for="">操作:</label>
+											<a class="text-susess" href="javascript:;"> 立即下单</a>
+											<span class="fgf">|</span>
+											<a class="text-susess" href="javascript:;"> 删除订单</a>
+
+										</div>
+
+									</li>
+
+									<li class="mui-row mui-clearfix">
+										<div class="mui-col-xs-6 mui-ellipsis">
+											<label for="">装箱数量:</label>
+											<span>20</span>
+
+										</div>
+										<div class="mui-col-xs-6 mui-ellipsis">
+											<label for="">备注:</label>
+
+											<span>xxxxxxxxxx</span>
+
+										</div>
+
+									</li>
+
+								</ul>
+								</div>
+
+			<!--item-->
+			<div class="zhineng-item">
+									<ul>
+
+										<li class="mui-row mui-clearfix">
+											<div class="mui-col-xs-6 mui-ellipsis">
+												<label for="">商品名称:</label>
+												<span>发财树</span>
+
+											</div>
+											<div class="mui-col-xs-6 mui-ellipsis">
+												<label for="">箱数:</label>
+												<!--<span class="iconfont  icon-renminbi text-danger " style="margin-right: -5px; vertical-align: middle;"></span>-->
+												<span>20</span>
+
+											</div>
+
+										</li>
+
+										<li class="mui-row mui-clearfix">
+											<div class="mui-col-xs-6 mui-ellipsis">
+												<label for="">规格:</label>
+												<span>A</span>
+
+											</div>
+											<div class="mui-col-xs-6 mui-ellipsis">
+												<div class="number-box mui-clearfix">
+													<label for="">订购数量：</label>
+													<div class="number">
+														<button class="minus btn" type="button">-</button>
+														<input class="num" type="number" value="1" data-min="1" />
+														<button class="plus btn" type="button">+</button>
+													</div>
+
+												</div>
+
+										</li>
+										<li class="mui-row mui-clearfix">
+											<div class="mui-col-xs-6 mui-ellipsis">
+												<label for="">型号:</label>
+												<span>A1</span>
+
+											</div>
+											<div class="mui-col-xs-6 mui-ellipsis">
+												<label for="">单价:</label>
+												<span class="iconfont  icon-renminbi text-danger " style="margin-right: -5px; vertical-align: middle;"></span>
+												<span>20</span>
+
+											</div>
+
+										</li>
+
+										<li class="mui-row mui-clearfix">
+											<div class="mui-col-xs-6 mui-ellipsis">
+												<label for="">供应商:</label>
+												<span>XXXXXX</span>
+
+											</div>
+											<div class="mui-col-xs-6 mui-ellipsis">
+												<label for="">金额:</label>
+												<span class="iconfont  icon-renminbi text-danger " style="margin-right: -5px; vertical-align: middle;"></span>
+												<span>2000.0</span>
+
+											</div>
+
+										</li>
+
+										<li class="mui-row mui-clearfix">
+											<div class="mui-col-xs-6 mui-ellipsis">
+												<label for="">单位：</label>
+												<span>箱</span>
+
+											</div>
+											<div class="mui-col-xs-6 mui-ellipsis op">
+												<label for="">操作:</label>
+												<a class="text-susess" href="javascript:;"> 立即下单</a>
+												<span class="fgf">|</span>
+												<a class="text-susess" href="javascript:;"> 删除订单</a>
+
+											</div>
+
+										</li>
+
+										<li class="mui-row mui-clearfix">
+											<div class="mui-col-xs-6 mui-ellipsis">
+												<label for="">装箱数量:</label>
+												<span>20</span>
+
+											</div>
+											<div class="mui-col-xs-6 mui-ellipsis">
+												<label for="">备注:</label>
+
+												<span>xxxxxxxxxx</span>
+
+											</div>
+
+										</li>
+
+									</ul>
+									</div>
+
+		</section>
+
+		<!--置顶-->
+		<aside class="zhiding">
+			<span class="iconfont icon-zhiding2 text-danger"></span>
+		</aside>
+
+		<script src="js/Home/all.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" charset="utf-8">
+			$(function() {
+
+			})
+		</script>
+	</body>
+
+</html>

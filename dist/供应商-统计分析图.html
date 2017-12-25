@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="Keywords" content="" />
+		<meta name="Description" content="" />
+		<title>统计分析图</title>
+		<link rel="stylesheet" type="text/css" href="Content/Home/cstfont/iconfont.css" />
+		<link rel="stylesheet" href="Content/Home/all.css" />
+		<link rel="stylesheet" href="Content/Home/table.min.css" />
+		<style type="text/css">
+			.chart {
+				height: 200px;
+				margin: 0px;
+				padding: 0px;
+			}
+			
+			h5 {
+				margin-top: 30px;
+				font-weight: bold;
+			}
+			
+			h5:first-child {
+				margin-top: 15px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!--头部-->
+		<header class="mui-bar mui-bar-nav bg-white">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left text-base"></a>
+			<h1 class="mui-title">供应商-统计分析图</h1>
+		</header>
+
+		<!--主体内容-->
+		<section class="tj-chart mui-content">
+
+			<!--统计图-->
+			<section class="tj-chart-img">
+
+				<h5 class="ttl">统计分析饼图</h5>
+				<div class="chart" id="pieChart_1"></div>
+				</div>
+
+			</section>
+
+			<!--表格-->
+			<section class="tj-chart-tb table-responsive">
+				<table class="table  mui-text-center table-bordered">
+					<thead>
+						<tr>
+							<th >商品名称</th>
+							<th >商品编码</th>
+							<th>销售日期</th>
+							<th>型号</th>
+							<th >规格</th>
+						</tr>
+
+					</thead>
+					<tbody>
+						<tr>
+							<td ><a href="javascript:;">发财树1发财树1发财树1</a></td>
+							<td>A3224</td>
+							<td >2017-8-12</td>
+							<td >A1</td>
+							<td >AWD</td>
+						</tr>
+						
+						<tr>
+							<td ><a href="javascript:;">发财树1发财树1发财树1</a></td>
+							<td>A3224</td>
+							<td >2017-8-12</td>
+							<td >A1</td>
+							<td >AWD</td>
+						</tr>
+						
+						
+						
+						<tr>
+							<td ><a href="javascript:;">发财树1发财树1发财树1</a></td>
+							<td>A3224</td>
+							<td >2017-8-12</td>
+							<td >A1</td>
+							<td >AWD</td>
+						</tr>
+						
+						
+						
+						<tr>
+							<td ><a href="javascript:;">发财树1发财树1发财树1</a></td>
+							<td>A3224</td>
+							<td >2017-8-12</td>
+							<td >A1</td>
+							<td >AWD</td>
+						</tr>
+						
+						
+						
+						<tr>
+							<td ><a href="javascript:;">发财树1发财树1发财树1</a></td>
+							<td>A3224</td>
+							<td >2017-8-12</td>
+							<td >A1</td>
+							<td >AWD</td>
+						</tr>
+						
+						
+					</tbody>
+			</section>
+
+		</section>
+
+		<script src="js/Home/all.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/Home/echarts-all.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/Home/mychart.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			//创建饼图1
+			createPei("pieChart_1", //id
+				["AF312A1", "AF312B1", "AF312C1", "AF312D", "AF312E"], //标题
+				[300, 400, 40, 50, 300] //数据
+			);
+		</script>
+	</body>
+
+</html>
