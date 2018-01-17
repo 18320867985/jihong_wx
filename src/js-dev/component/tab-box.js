@@ -10,23 +10,8 @@
  * */
 
 
-;(function($) {
++(function($) {
 
-	// 选项卡tag-box 1
-	$(".tab-box .tab-item").on("tap", function(e) {
-		
-		e.preventDefault();
-		var p=$(this).parents(".tab-box").find(".tab-item").removeClass("active");
-		$(this).addClass("active");
-
-		var target = $(this).attr("data-target");
-		$(".tab-content").find(".tab-content-item").removeClass("active");
-		$(".tab-content").find(target).addClass("active");
-		
-		// 点击触发自定义事件 
-		$(this).trigger("tab_select");
-
-	});
 	
 	// 选项卡tag-box2 新的
 	$(".tab-big .tab-ttl .tab-item").on("click", function(e) {

@@ -67,9 +67,9 @@ var paths = {
 		
 		"src/js-dev/libs/vue/vue.min.js", // vue
 		
-		"src/js-dev/libs/mui/pullToRefresh.js", // 循环初始化所有下拉刷新，上拉加载1。
+		"src/js-dev/libs/mui/mui.pullToRefresh.js", // 循环初始化所有下拉刷新，上拉加载1。
 			
-		"src/js-dev/libs/mui/pullToRefresh.material.js", // 循环初始化所有下拉刷新，上拉加载2。
+		"src/js-dev/libs/mui/mui.pullToRefresh.material.js", // 循环初始化所有下拉刷新，上拉加载2。
 		
 		"src/js-dev/libs/zepto/zepto.js", //zepto.js
 		

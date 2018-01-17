@@ -25,7 +25,8 @@ Date.prototype.format = function(fmt) { //author: meizz
 }
 	
 	
-	
+
+
 	
  common=(function($){
 	

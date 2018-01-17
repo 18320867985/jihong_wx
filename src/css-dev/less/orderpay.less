@@ -1,0 +1,66 @@
+/*订单支付*/
+
+.orderpay-list {
+    margin-top: 15px;
+    padding: 0;
+    background: #fff;
+    li {
+        position: relative;
+        padding: 10px 20px;
+        
+        
+        h4{
+            font-weight: 400;
+        }
+        
+       a{
+           color:@text-777;
+        }   
+        
+        .iconfont{
+            font-size: 17px;
+           vertical-align: middle;
+        } 
+        img,
+        label,
+        span{
+            display: inline-block;
+            float: left;
+        }
+        
+        img {
+            height: 30px;
+            width: 40px;
+        }
+        label {
+            height: 30px;
+            min-width: 40px;
+            line-height: 30px;
+         
+            
+            &+img{
+                margin-left: 20px;
+            }
+        }
+        
+        span{
+              height: 30px;
+                line-height: 30px;
+               margin: 0 3px;
+        }
+        
+        // 右边icon
+         .mui-icon{
+             position: absolute;
+             right: 0;
+             top:13px;
+             padding-right: 10px;
+             color:@text-777;
+             
+         }
+        
+        &+li {
+            border-top: 1px solid #ddd;
+        }
+    }
+}
